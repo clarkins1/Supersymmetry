@@ -628,7 +628,7 @@ public class ThirdDegreeMaterials {
 
         LithiumHydroxideMotherLiquor = new Material.Builder(24100, SuSyUtility.susyId('lithium_hydroxide_mother_liquor'))
                 .liquid()
-                .components(LithiumHydroxide * 1, Water * 10)
+                .components(LithiumHydroxide * 1, Water * 8)
                 .colorAverage()
                 .build();
 

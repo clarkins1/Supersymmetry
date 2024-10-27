@@ -107,7 +107,7 @@ mods.gregtech.macerator.removeByInput(2, [item('gregtech:ore_sulfur_0')], null)
 // Armors
 crafting.addShaped("susy:simple_gas_mask", item('susy:susy_armor_item').withNbt(['damage': 0.0D]), [
     [item('gregtech:meta_item_1', 438), item('minecraft:paper'), item('gregtech:meta_item_1', 438)],
-    [ore('string'), item('gregtech:meta_dust', 271), ore('string')],
+    [ore('string'), ore('dustCharcoal'), ore('string')],
     [null, item('minecraft:paper'), null]
 ])
 
