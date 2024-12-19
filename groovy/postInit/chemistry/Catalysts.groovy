@@ -416,6 +416,27 @@ BR.recipeBuilder()
     .EUt(480)
     .buildAndRegister();
 
+// Syngas WGSR catalysts
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustChromiumTrioxide') * 1)
+    .inputs(ore('dustIronIiiOxide') * 12)
+    .fluidInputs(fluid('sodium_hydroxide_solution') * 2000)
+    .outputs(metaitem('dustHtsCatalyst'))
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister()
+
+ROASTER.recipeBuilder()
+    .inputs(ore('dustZincOxide') * 1)
+    .inputs(ore('dustCupricOxide') * 1)
+    .inputs(ore('dustAlumina') * 1)
+    .fluidInputs(fluid('sodium_hydroxide_solution') * 2000)
+    .outputs(metaitem('dustLtsCatalyst'))
+    .duration(200)
+    .EUt(30)
+    .buildAndRegister()
+
 // Fischer-Tropsch catalysts
 
     // Low-temperature Fischer-Tropsch catalyst
@@ -430,7 +451,7 @@ BR.recipeBuilder()
         .EUt(120)
         .buildAndRegister();
 
-    SINTERING_OVEN.recipeBuilder()
+    ROASTER.recipeBuilder()
         .fluidInputs(fluid('ltft_catalyst_solution') * 1000)
         .outputs(metaitem('dustLtftCatalyst'))
         .fluidOutputs(fluid('steam') * 1000)
@@ -448,4 +469,3 @@ BR.recipeBuilder()
         .duration(400)
         .EUt(120)
         .buildAndRegister();
-

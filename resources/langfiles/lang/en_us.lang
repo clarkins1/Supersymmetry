@@ -2100,9 +2100,9 @@ susy.material.two_six_xylenol=2,6-Xylenol
 susy.material.two_four_five_xylenol_mixture=2,4/5-Xylenol Mixture
 susy.material.cresol_novolacs_oligomer=Cresol Novolacs Oligomer
 susy.material.epoxy_cresol_novolacs=Epoxy Cresol Novolacs (ECN)
-susy.material.ltft_catalyst_solution=Ltft Catalyst Solution
-susy.material.ltft_catalyst=Ltft Catalyst
-susy.material.htft_catalyst=Htft Catalyst
+susy.material.ltft_catalyst_solution=Low Temperature Fischer Tropsch Catalyst Solution
+susy.material.ltft_catalyst=Low Temperature Fischer Tropsch Catalyst
+susy.material.htft_catalyst=High Temperature Fischer Tropsch Catalyst
 
 # Isotopes
 
