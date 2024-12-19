@@ -415,3 +415,37 @@ BR.recipeBuilder()
     .duration(500)
     .EUt(480)
     .buildAndRegister();
+
+// Fischer-Tropsch catalysts
+
+    // Low-temperature Fischer-Tropsch catalyst
+
+    BR.recipeBuilder()
+        .inputs(ore('dustSiliconDioxide') * 3)
+        .inputs(ore('dustPotassiumCarbonate') * 2)
+        .inputs(ore('dustAlumina'))
+        .fluidInputs(fluid('iron_iii_nitrate_solution') * 1000)
+        .fluidOutputs(fluid('ltft_catalyst_solution') * 1000)
+        .duration(100)
+        .EUt(120)
+        .buildAndRegister();
+
+    SINTERING_OVEN.recipeBuilder()
+        .fluidInputs(fluid('ltft_catalyst_solution') * 1000)
+        .outputs(metaitem('dustLtftCatalyst'))
+        .fluidOutputs(fluid('steam') * 1000)
+        .duration(100)
+        .EUt(120)
+        .buildAndRegister();
+
+    // High-temperature Fischer-Tropsch catalyst
+
+    SINTERING_OVEN.recipeBuilder()
+        .inputs(ore('dustIronIiiOxide') * 5)
+        .inputs(ore('dustPotassiumCarbonate') * 2)
+        .inputs(ore('dustAlumina'))
+        .outputs(metaitem('dustHtftCatalyst'))
+        .duration(400)
+        .EUt(120)
+        .buildAndRegister();
+

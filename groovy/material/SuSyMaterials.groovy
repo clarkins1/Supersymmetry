@@ -352,6 +352,9 @@ class SuSyMaterials {
         public static Material MidgradeGasoline;
         public static Material PremiumGasoline;
         public static Material SupremeGasoline;
+        public static Material LtftCatalystSolution;
+        public static Material LtftCatalyst;
+        public static Material HtftCatalyst;
         public static Material AcidicWastewater;
         public static Material ImpureTitaniumTetrachloride;
         public static Material DistilledTitaniumTetrachloride;

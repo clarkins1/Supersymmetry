@@ -1163,7 +1163,24 @@ public class UnknownCompositionMaterials {
                 .flags(FLAMMABLE)
                 .build();
 
-        //FREE IDs: 4225-4231
+        LtftCatalystSolution = new Material.Builder(4225, SuSyUtility.susyId('ltft_catalyst_solution'))
+                .liquid()
+                .color(0x4f3030)
+                .build();
+
+        LtftCatalyst = new Material.Builder(4226, SuSyUtility.susyId('ltft_catalyst'))
+                .dust()
+                .color(0x4f3030)
+                .flags(GENERATE_CATALYST_BED)
+                .build();
+
+        HtftCatalyst = new Material.Builder(4227, SuSyUtility.susyId('htft_catalyst'))
+                .dust()
+                .color(0x7d2727)
+                .flags(GENERATE_CATALYST_BED)
+                .build();
+
+        //FREE IDs: 4228-4231
 
         TitanylSulfateSolution = new Material.Builder(4232, SuSyUtility.susyId('titanyl_sulfate_solution'))
                 .liquid()

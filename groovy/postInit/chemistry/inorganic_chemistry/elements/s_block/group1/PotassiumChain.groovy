@@ -174,13 +174,3 @@ ELECTROLYTIC_CELL.recipeBuilder()
         .EUt(30)
         .duration(300)
         .buildAndRegister()
-
-//COMPOUNDS
-
-ROASTER.recipeBuilder()
-        .inputs(ore('dustPotassiumCarbonate') * 6)
-        .outputs(metaitem('dustPotassiumOxide') * 3)
-        .fluidOutputs(fluid('carbon_dioxide') * 1000)
-        .EUt(30)
-        .duration(60)
-        .buildAndRegister()
