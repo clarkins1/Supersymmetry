@@ -256,3 +256,28 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .duration(160)
             .EUt(120)
             .buildAndRegister()
+
+        // Methanol to gasoline
+
+        FLBR.recipeBuilder()
+            .fluidInputs(fluid('methanol') * 4460)
+            .notConsumable(ore('catalystBedZsm5'))
+            .fluidOutputs(fluid('mtg_overheads') * 580)
+            .fluidOutputs(fluid('naphtha') * 420)
+            .fluidOutputs(fluid('water') * 4460)
+            .duration(200)
+            .EUt(120)
+            .buildAndRegister()
+
+        HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
+            .fluidInputs(fluid('mtg_overheads') * 580)
+            .fluidOutputs(fluid('n_butane') * 20)
+            .fluidOutputs(fluid('isobutane') * 160)
+            .fluidOutputs(fluid('butene') * 80)
+            .fluidOutputs(fluid('propane') * 80)
+            .fluidOutputs(fluid('propene') * 75)
+            .fluidOutputs(fluid('ethane') * 65)
+            .fluidOutputs(fluid('methane') * 100)
+            .duration(20)
+            .EUt(120)
+            .buildAndRegister()
