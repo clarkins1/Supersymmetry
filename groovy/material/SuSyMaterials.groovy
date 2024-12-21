@@ -1288,7 +1288,7 @@ class SuSyMaterials {
         public static Material WackerCatalyst;
         public static Material PotassiumIodideSolution;
         public static Material SodiumSulfateSolution;
-        public static Material ImpregnatedCopperOxideCatalyst;
+        public static Material CopperZincChromiumOxide;
         public static Material PhilipsCatalyst;
         public static Material ZieglerNattaCatalyst;
         public static Material HydrogenPeroxideSolution;

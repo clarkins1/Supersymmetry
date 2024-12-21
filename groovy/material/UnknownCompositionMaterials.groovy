@@ -495,6 +495,7 @@ public class UnknownCompositionMaterials {
 
         HTSCatalyst = new Material.Builder(4094, SuSyUtility.susyId('hts_catalyst'))
                 .dust()
+                .flags(GENERATE_CATALYST_BED)
                 .color(0x5e4f4f)
                 .build();
 
