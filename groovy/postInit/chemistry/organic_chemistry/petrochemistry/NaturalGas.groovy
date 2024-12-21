@@ -4,6 +4,7 @@ MIXER = recipemap('mixer')
 FLUID_HEATER = recipemap('fluid_heater')
 BCR = recipemap('bubble_column_reactor')
 DT = recipemap('distillation_tower')
+HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillation')
 
 // Water removal 
 
@@ -55,7 +56,7 @@ DT.recipeBuilder()
 .EUt(Globals.voltAmps[1] * 2)
 .buildAndRegister()
 
-DT.recipeBuilder()
+HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder()
 .fluidInputs(fluid('liquid_natural_gas') * 20)
 .fluidOutputs(fluid('butane') * 64)
 .fluidOutputs(fluid('propane') * 128)

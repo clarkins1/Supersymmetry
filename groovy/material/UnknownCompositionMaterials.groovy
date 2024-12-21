@@ -1196,7 +1196,7 @@ public class UnknownCompositionMaterials {
 
         AcidicWastewater.setFormula('(H2O)(?)', true);
 
-        DirtyMolecularSieve = new Material.Builder(4234, SuSyUtility.susyId('dirty_molecular_sieve'))
+        CarbonatedMolecularSieve = new Material.Builder(4234, SuSyUtility.susyId('carbonated_molecular_sieve'))
                 .dust()
                 .color(0x737373)
                 .iconSet(DULL)

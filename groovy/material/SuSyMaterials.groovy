@@ -363,7 +363,7 @@ class SuSyMaterials {
         public static Material GaseousIronIIIChloride;
         public static Material GaseousTitaniumTetrachloride;
         public static Material GaseousAluminiumChloride;
-        public static Material DirtyMolecularSieve;
+        public static Material CarbonatedMolecularSieve;
         public static Material OligomericBisphenolSolution;
         public static Material GraniteTailingSlurry;
         public static Material SphaleriteByproductSlurry;
