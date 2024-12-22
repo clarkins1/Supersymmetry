@@ -661,10 +661,10 @@ class SuSyMaterials {
         public static Material LightOilyBrine;
         public static Material HeavyOilyBrine;
 
-        public static Material RawHydrogenSyngas;
+        public static Material RawHydrogenRichSyngas;
         public static Material HydrogenRichSyngas;
         public static Material ReformedHydrogenRichSyngas;
-        public static Material RawMonoxideSyngas;
+        public static Material RawMonoxideRichSyngas;
         public static Material MonoxideRichSyngas;
         public static Material ReformedMonoxideRichSyngas;
 
@@ -678,7 +678,7 @@ class SuSyMaterials {
         public static Material LtLightGases;
         public static Material HtSyncrude;
         public static Material HtLightGases;
-        
+
         public static Material SyntheticWax;
         public static Material OxygenateSolution;
         public static Material MethanolDehydrationOverheads;

@@ -332,39 +332,33 @@ public class PetrochemistryMaterials {
                 .build()
                 .setFormula('(H2)2.5(CO)(?)', true);
 
-        HydrogenRichSyngas = new Material.Builder(20059, SuSyUtility.susyId('hydrogen_rich_syngas'))
+        HydrogenRichSyngas = new Material.Builder(20060, SuSyUtility.susyId('hydrogen_rich_syngas'))
                 .gas()
                 .color(0xfcf8eb)
                 .flags(FLAMMABLE)
                 .build()
                 .setFormula('(H2)2.5(CO)', true);
 
-        ReformedHydrogenRichSyngas = new Material.Builder(20060, SuSyUtility.susyId('reformed_hydrogen_rich_syngas'))
+        ReformedHydrogenRichSyngas = new Material.Builder(20061, SuSyUtility.susyId('reformed_hydrogen_rich_syngas'))
                 .gas(new FluidBuilder().temperature(800))
                 .color(0xfff8e3)
                 .flags(FLAMMABLE)
                 .build()
                 .setFormula('(H2)3.5(CO2)', true);
 
-        MonoxideRichSyngas = new Material.Builder(20061, SuSyUtility.susyId('monoxide_rich_syngas'))
+        MonoxideRichSyngas = new Material.Builder(20062, SuSyUtility.susyId('monoxide_rich_syngas'))
                 .gas()
                 .color(0xf2ecdc)
                 .flags(FLAMMABLE)
                 .build()
                 .setFormula('(H2)2(CO)', true);
 
-        ReformedMonoxideRichSyngas = new Material.Builder(20062, SuSyUtility.susyId('reformed_monoxide_rich_syngas'))
+        ReformedMonoxideRichSyngas = new Material.Builder(20063, SuSyUtility.susyId('reformed_monoxide_rich_syngas'))
                 .gas(new FluidBuilder().temperature(800))
                 .color(0xfcf3d9)
                 .flags(FLAMMABLE)
                 .build()
                 .setFormula('(H2)3(CO2)', true);
-
-        ClarifiedSlurryOil = new Material.Builder(20063, SuSyUtility.susyId('clarified_slurry_oil'))
-                .liquid()
-                .color(0x302618)
-                .flags(FLAMMABLE)
-                .build();
 
         TreatedSulfuricNaphtha = new Material.Builder(20064, SuSyUtility.susyId('treated_sulfuric_naphtha'))
                 .gas()
@@ -394,7 +388,11 @@ public class PetrochemistryMaterials {
                 .flags(FLAMMABLE)
                 .build();
 
-        //FREE ID: 20069
+        ClarifiedSlurryOil = new Material.Builder(20069, SuSyUtility.susyId('clarified_slurry_oil'))
+                .liquid()
+                .color(0x302618)
+                .flags(FLAMMABLE)
+                .build();
 
         CrudeLubricatingOil = new Material.Builder(20070, SuSyUtility.susyId('crude_lubricating_oil'))
                 .liquid()
