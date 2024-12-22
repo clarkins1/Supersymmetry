@@ -158,15 +158,15 @@ class Petrochemistry {
     ]
 
     public static crackables = [
-        vacuum_oil_residue : new Crackable('vacuum_oil_residue').withTraits(CatalyticCrackable, HydroCrackable, ThermalCrackable).tap { hydrogen_consumed = 10220; gas_produced = 550 },
-        atmospheric_oil_residue : new Crackable('atmospheric_oil_residue').withTraits(CatalyticCrackable, HydroCrackable, ThermalCrackable).tap { hydrogen_consumed = 9900; gas_produced = 610 },
-        light_gas_oil : new Crackable('light_gas_oil').withTraits(HydroCrackable, SteamCrackable).tap { hydrogen_consumed = 1270; gas_produced = 1790 },
-        heavy_gas_oil : new Crackable('heavy_gas_oil').withTraits(CatalyticCrackable, HydroCrackable, SteamCrackable).tap { hydrogen_consumed = 3630; gas_produced = 1020 },
+        vacuum_oil_residue : new Crackable('vacuum_oil_residue').withTraits(CatalyticCrackable, HydroCrackable, ThermalCrackable).tap { hydrogen_consumed = 15680; gas_produced = 550 },
+        atmospheric_oil_residue : new Crackable('atmospheric_oil_residue').withTraits(CatalyticCrackable, HydroCrackable, ThermalCrackable).tap { hydrogen_consumed = 14320; gas_produced = 590 },
+        light_gas_oil : new Crackable('light_gas_oil').withTraits(HydroCrackable, SteamCrackable).tap { hydrogen_consumed = 19570; gas_produced = 1790 },
+        heavy_gas_oil : new Crackable('heavy_gas_oil').withTraits(CatalyticCrackable, HydroCrackable, SteamCrackable).tap { hydrogen_consumed = 9970; gas_produced = 1020 },
         ethane : new Crackable('ethane').withTraits(SteamCrackable),
         propane : new Crackable('propane').withTraits(SteamCrackable),
         butane : new Crackable('butane').withTraits(SteamCrackable),
-        light_cycle_oil : new Crackable('light_cycle_oil').withTraits(HydroCrackable).tap { hydrogen_consumed = 2300; gas_produced = 1290 },
-        synthetic_wax : new Crackable('synthetic_wax').withTraits(HydroCrackable).tap { hydrogen_consumed = 18460; gas_produced = 230},
+        light_cycle_oil : new Crackable('light_cycle_oil').withTraits(HydroCrackable).tap { hydrogen_consumed = 1100; gas_produced = 1290 },
+        synthetic_wax : new Crackable('synthetic_wax').withTraits(HydroCrackable).tap { hydrogen_consumed = 7530; gas_produced = 1410 },
     ]
 
     public static oils = [
