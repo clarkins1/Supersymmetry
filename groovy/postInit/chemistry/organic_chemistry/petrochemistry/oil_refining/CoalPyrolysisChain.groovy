@@ -86,7 +86,7 @@ CENTRIFUGE.recipeBuilder()
         .buildAndRegister()
 
 DISTILLATION_TOWER.recipeBuilder()
-        .chancedOutput(metaitem('bitumen'), 5000, 0)
+        .chancedOutput(metaitem('dustAsphalt'), 5000, 0)
         .fluidInputs(fluid('coal_tar') * 1000)
         .fluidOutputs(fluid('anthracene_oil') * 100)
         .fluidOutputs(fluid('naphthalene_oil') * 100)

@@ -40,7 +40,7 @@ DT.recipeBuilder()
     .fluidOutputs(fluid('sulfuric_propane_fuel_gas') * 400)
     .duration(40)
     .EUt(30)
-    .buildAndRegister()
+    .buildAndRegister() 
 
 DT.recipeBuilder()
     .fluidInputs(fluid('fuel_gas') * 1000)

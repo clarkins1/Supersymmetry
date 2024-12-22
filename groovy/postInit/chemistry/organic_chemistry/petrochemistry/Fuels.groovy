@@ -649,6 +649,13 @@ BLENDER.recipeBuilder()
 
 // Diesel final blending
 
+def dieselFeedstocks = [
+    'light_cycle_oil',
+    'medium_liquefaction_oil'
+]
+
+// Fuel Oil (marine and bunker fuels)
+
 MIXER.recipeBuilder()
     .fluidInputs(fluid('light_gas_oil') * 1000)
     .fluidOutputs(fluid('diesel') * 1000)
@@ -657,14 +664,16 @@ MIXER.recipeBuilder()
     .EUt(120)
     .buildAndRegister()
 
-MIXER.recipeBuilder()
-    .fluidInputs(fluid('light_gas_oil') * 700)
-    .fluidInputs(fluid('light_cycle_oil') * 300)
-    .fluidOutputs(fluid('diesel') * 1000)
-    .circuitMeta(2)
-    .duration(2)
-    .EUt(120)
-    .buildAndRegister()
+for (diesel in dieselFeedstocks) {
+    MIXER.recipeBuilder()
+        .fluidInputs(fluid('light_gas_oil') * 700)
+        .fluidInputs(fluid(diesel) * 300)
+        .fluidOutputs(fluid('diesel') * 1000)
+        .circuitMeta(2)
+        .duration(2)
+        .EUt(120)
+        .buildAndRegister()
+}
 
 BLENDER.recipeBuilder()
     .fluidInputs(fluid('diesel') * 1000)

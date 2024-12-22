@@ -226,7 +226,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .notConsumable(metaitem('dustMolecularSieve') * 5)
             .fluidOutputs(fluid('hydrogen') * 7000)
             .fluidOutputs(fluid('carbon_dioxide') * 1000)
-            .duration(160)
+            .duration(80)
             .EUt(120)
             .buildAndRegister()
 
@@ -235,7 +235,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .notConsumable(metaitem('dustMolecularSieve') * 5)
             .fluidOutputs(fluid('hydrogen') * 5000)
             .fluidOutputs(fluid('carbon_monoxide') * 1000)
-            .duration(160)
+            .duration(80)
             .EUt(120)
             .buildAndRegister()
 
@@ -244,7 +244,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .notConsumable(metaitem('dustMolecularSieve') * 5)
             .fluidOutputs(fluid('hydrogen') * 6000)
             .fluidOutputs(fluid('carbon_dioxide') * 1000)
-            .duration(160)
+            .duration(80)
             .EUt(120)
             .buildAndRegister()
 
@@ -253,7 +253,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .notConsumable(metaitem('dustMolecularSieve') * 5)
             .fluidOutputs(fluid('carbon_monoxide') * 4000)
             .fluidOutputs(fluid('hydrogen') * 1000)
-            .duration(160)
+            .duration(80)
             .EUt(120)
             .buildAndRegister()
 
@@ -265,7 +265,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
             .fluidOutputs(fluid('mtg_overheads') * 580)
             .fluidOutputs(fluid('naphtha') * 420)
             .fluidOutputs(fluid('water') * 4460)
-            .duration(200)
+            .duration(20)
             .EUt(120)
             .buildAndRegister()
 
