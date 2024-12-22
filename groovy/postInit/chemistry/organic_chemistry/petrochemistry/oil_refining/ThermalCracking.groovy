@@ -188,10 +188,10 @@ crackables.each { _, crackable ->
 
     // Flexicoking
         PYROLYSE_OVEN.recipeBuilder()
-            .inputs(ore('dustGreenCoke') * 20)
-            .fluidInputs(fluid('dense_steam') * 16000)
-            .outputs(metaitem('dustHeatedGreenCoke') * 4)
-            .fluidOutputs(fluid('syngas') * 12000)
-            .duration(50)
+            .inputs(ore('dustGreenCoke') * 5)
+            .fluidInputs(fluid('dense_steam') * 4000)
+            .outputs(metaitem('dustHeatedGreenCoke') * 1)
+            .fluidOutputs(fluid('monoxide_rich_syngas') * 10000)
+            .duration(10)
             .EUt(30)
             .buildAndRegister()

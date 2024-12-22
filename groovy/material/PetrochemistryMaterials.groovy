@@ -278,7 +278,13 @@ public class PetrochemistryMaterials {
                 .flags(FLAMMABLE)
                 .build()
 
-        // FREE IDs: 20046-40048
+        HydrocrackedSyntheticWax = new Material.Builder(20046, SuSyUtility.susyId('hydrocracked_synthetic_wax'))
+                .liquid(new FluidBuilder().temperature(673))
+                .color(0xf7e8cb)
+                .flags(FLAMMABLE)
+                .build()
+
+        // FREE IDs: 20047-40048
 
         HydrocrackedLightCycleOil = new Material.Builder(20049, SuSyUtility.susyId('hydrocracked_light_cycle_oil'))
                 .gas(new FluidBuilder().temperature(673))
@@ -880,19 +886,25 @@ public class PetrochemistryMaterials {
                 .flags(FLAMMABLE)
                 .build();
 
-        HtSyncrude = new Material.Builder(20153, SuSyUtility.susyId('ht_syncrude'))
+        RawHtSyncrude = new Material.Builder(20153, SuSyUtility.susyId('raw_ht_syncrude'))
                 .liquid()
                 .color(0x6e4b3a)
                 .flags(FLAMMABLE)
                 .build();
 
-        HtLightGases = new Material.Builder(20154, SuSyUtility.susyId('ht_light_gases'))
+        HtSyncrude = new Material.Builder(20154, SuSyUtility.susyId('ht_syncrude'))
+                .liquid()
+                .color(0x8b5a2b)
+                .flags(FLAMMABLE)
+                .build();
+
+        HtLightGases = new Material.Builder(20155, SuSyUtility.susyId('ht_light_gases'))
                 .gas()
                 .color(0xdea55f)
                 .flags(FLAMMABLE)
                 .build();
 
-        MethanolDehydrationOverheads = new Material.Builder(20155, SuSyUtility.susyId('methanol_dehydration_overheads'))
+        MethanolDehydrationOverheads = new Material.Builder(20156, SuSyUtility.susyId('methanol_dehydration_overheads'))
                 .gas()
                 .color(0xdec887)
                 .flags(FLAMMABLE)

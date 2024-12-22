@@ -676,10 +676,12 @@ class SuSyMaterials {
         public static Material RawLtSyncrude;
         public static Material LtSyncrude;
         public static Material LtLightGases;
+        public static Material RawHtSyncrude;
         public static Material HtSyncrude;
         public static Material HtLightGases;
 
         public static Material SyntheticWax;
+        public static Material HydrocrackedSyntheticWax;
         public static Material OxygenateSolution;
         public static Material MethanolDehydrationOverheads;
         public static Material AsphalteneExtract;

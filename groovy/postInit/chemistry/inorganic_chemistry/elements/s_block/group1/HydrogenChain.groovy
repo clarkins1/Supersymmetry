@@ -1,3 +1,5 @@
+import globals.Globals
+
 EBF = recipemap('electric_blast_furnace')
 FBR = recipemap('fluidized_bed_reactor')
 ELECTROMAGNETIC_SEPARATOR = recipemap('electromagnetic_separator')
