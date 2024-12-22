@@ -13,7 +13,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
 
 // Syngas production and refining
 
-    // Methane reforming
+    // Light hydrocarbon reforming
 
     REACTION_FURNACE.recipeBuilder()
         .circuitMeta(1)
@@ -56,6 +56,16 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
         .notConsumable(ore('catalystBedSupportedNickel'))
         .fluidOutputs(fluid('raw_monoxide_rich_syngas') * 18020)
         .duration(30)
+        .EUt(Globals.voltAmps[2])
+        .buildAndRegister()
+
+    REACTION_FURNACE.recipeBuilder()
+        .fluidInputs(fluid('fuel_gas') * 2036)
+        .fluidInputs(fluid('dense_steam') * 100)
+        .fluidInputs(fluid('carbon_dioxide') * 1936)
+        .notConsumable(ore('catalystBedSupportedNickel'))
+        .fluidOutputs(fluid('raw_monoxide_rich_syngas') * 10180)
+        .duration(20)
         .EUt(Globals.voltAmps[2])
         .buildAndRegister()
 
