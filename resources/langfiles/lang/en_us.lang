@@ -388,11 +388,11 @@ susy.material.potassium_fluoride_solution=Potassium Fluoride Solution
 susy.material.concentrated_red_mud=Concentrated Red Mud
 susy.material.furfural_solution=Furfural Solution
 susy.material.acidic_furfural_solution=Acidic Furfural Solution
-susy.material.syngas=Syngas
+susy.material.monoxide_rich_syngas=Monoxide Rich Syngas
 susy.material.ammonia_reaction_mix=Ammonia Reaction Mix
 susy.material.ammonia_rich_gas=Ammonia-Rich Gas
 susy.material.ethanol_solution=Ethanol Solution
-susy.material.reformed_syngas=Reformed Syngas
+susy.material.reformed_monoxide_richsyngas=Reformed Monoxide Rich Syngas
 susy.material.flue_gas=Flue Gas
 susy.material.chilled_flue_gas=Chilled Flue Gas
 susy.material.chilled_lava=Chilled Lava
@@ -2103,6 +2103,23 @@ susy.material.epoxy_cresol_novolacs=Epoxy Cresol Novolacs (ECN)
 susy.material.ltft_catalyst_solution=Low Temperature Fischer Tropsch Catalyst Solution
 susy.material.ltft_catalyst=Low Temperature Fischer Tropsch Catalyst
 susy.material.htft_catalyst=High Temperature Fischer Tropsch Catalyst
+susy.material.raw_monoxide_rich_syngas=Raw Monoxide Rich Syngas
+susy.material.raw_hydrogen_rich_syngas=Raw Hydrogen Rich Syngas
+susy.material.hydrogen_rich_syngas=Hydrogen Rich Syngas
+susy.material.reformed_hydrogen_rich_syngas=Reformed Hydrogen Rich Syngas
+susy.material.tetralin=Tetralin
+susy.material.liquefaction_oil=Liquefaction Oil
+susy.material.light_liquefaction_oil=Light Liquefaction Oil
+susy.material.crude_medium_liquefaction_oil=Crude Medium Liquefaction Oil
+susy.material.medium_liquefaction_oil=Medium Liquefaction Oil
+susy.material.raw_lt_syncrude=Raw Lt Syncrude
+susy.material.lt_syncrude=Lt Syncrude
+susy.material.lt_light_gases=Lt Light Gases
+susy.material.ht_syncrude=Ht Syncrude
+susy.material.ht_light_gases=Ht Light Gases
+susy.material.synthetic_wax=Synthetic Wax
+susy.material.oxygenate_solution=Oxygenate Solution
+susy.material.methanol_dehydration_overheads=Methanol Dehydration Overheads
 
 # Isotopes
 

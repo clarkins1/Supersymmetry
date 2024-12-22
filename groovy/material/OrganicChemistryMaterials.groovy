@@ -2244,7 +2244,12 @@ public class OrganicChemistryMaterials {
                 .color(0xa0c9db)
                 .build();
 
-        //FREE ID: 15359
+        Tetralin = new Material.Builder(15359, SuSyUtility.susyId('tetralin'))
+                .liquid()
+                .components(Carbon * 10, Hydrogen * 12)
+                .color(0xbfb163)
+                .flags(FLAMMABLE)
+                .build();
 
         Diamylamine = new Material.Builder(15360, SuSyUtility.susyId('diamylamine'))
                 .liquid()

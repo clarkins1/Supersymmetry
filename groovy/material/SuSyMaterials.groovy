@@ -660,6 +660,28 @@ class SuSyMaterials {
         public static Material OilyBrine;
         public static Material LightOilyBrine;
         public static Material HeavyOilyBrine;
+
+        public static Material RawHydrogenSyngas;
+        public static Material HydrogenRichSyngas;
+        public static Material ReformedHydrogenRichSyngas;
+        public static Material RawMonoxideSyngas;
+        public static Material MonoxideRichSyngas;
+        public static Material ReformedMonoxideRichSyngas;
+
+        public static Material LiquefactionOil;
+        public static Material LightLiquefactionOil;
+        public static Material CrudeMediumLiquefactionOil;
+        public static Material MediumLiquefactionOil;
+
+        public static Material RawLtSyncrude;
+        public static Material LtSyncrude;
+        public static Material LtLightGases;
+        public static Material HtSyncrude;
+        public static Material HtLightGases;
+        
+        public static Material SyntheticWax;
+        public static Material OxygenateSolution;
+        public static Material MethanolDehydrationOverheads;
         public static Material AsphalteneExtract;
         public static Material SourGas;
         public static Material SlackWax;
@@ -667,8 +689,6 @@ class SuSyMaterials {
         public static Material UncatalyzedSulfurousGases;
         public static Material BtexExtract;
         public static Material BTEX;
-        public static Material Syngas;
-        public static Material ReformedSyngas;
         public static Material ClarifiedSlurryOil;
         public static Material CrudeLubricatingOil;
         public static Material SolventLubricantMixture;
@@ -1748,6 +1768,7 @@ class SuSyMaterials {
         public static Material SalicylideneEthylenediamine;
         public static Material Pseudocumene;
         public static Material TwoButoxyethanol;
+        public static Material Tetralin;
         public static Material PolyethyleneGlycol;
         public static Material OneThreeDinitrobenzene;
         public static Material MetaPhenylenediamine;

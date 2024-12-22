@@ -318,21 +318,47 @@ public class PetrochemistryMaterials {
                 .flags(FLAMMABLE)
                 .build()
 
-        //FREE IDs: 20056-20060
+        RawMonoxideRichSyngas = new Material.Builder(20058, SuSyUtility.susyId('raw_monoxide_rich_syngas'))
+                .gas()
+                .color(0xf2e9d9)
+                .flags(FLAMMABLE)
+                .build()
+                .setFormula('(H2)2(CO)(?)', true);
 
-        Syngas = new Material.Builder(20061, SuSyUtility.susyId('syngas'))
+        RawHydrogenRichSyngas = new Material.Builder(20059, SuSyUtility.susyId('raw_hydrogen_rich_syngas'))
+                .gas()
+                .color(0xfcf8eb)
+                .flags(FLAMMABLE)
+                .build()
+                .setFormula('(H2)2.5(CO)(?)', true);
+
+        HydrogenRichSyngas = new Material.Builder(20059, SuSyUtility.susyId('hydrogen_rich_syngas'))
+                .gas()
+                .color(0xfcf8eb)
+                .flags(FLAMMABLE)
+                .build()
+                .setFormula('(H2)2.5(CO)', true);
+
+        ReformedHydrogenRichSyngas = new Material.Builder(20060, SuSyUtility.susyId('reformed_hydrogen_rich_syngas'))
+                .gas(new FluidBuilder().temperature(800))
+                .color(0xfff8e3)
+                .flags(FLAMMABLE)
+                .build()
+                .setFormula('(H2)3.5(CO2)', true);
+
+        MonoxideRichSyngas = new Material.Builder(20061, SuSyUtility.susyId('monoxide_rich_syngas'))
                 .gas()
                 .color(0xf2ecdc)
                 .flags(FLAMMABLE)
                 .build()
-                .setFormula('(H2)3(CO)', true);
+                .setFormula('(H2)2(CO)', true);
 
-        ReformedSyngas = new Material.Builder(20062, SuSyUtility.susyId('reformed_syngas'))
+        ReformedMonoxideRichSyngas = new Material.Builder(20062, SuSyUtility.susyId('reformed_monoxide_rich_syngas'))
                 .gas(new FluidBuilder().temperature(800))
                 .color(0xfcf3d9)
                 .flags(FLAMMABLE)
                 .build()
-                .setFormula('(H2)4(CO2)', true);
+                .setFormula('(H2)3(CO2)', true);
 
         ClarifiedSlurryOil = new Material.Builder(20063, SuSyUtility.susyId('clarified_slurry_oil'))
                 .liquid()
@@ -799,6 +825,78 @@ public class PetrochemistryMaterials {
         HeatedLightCycleOil = new Material.Builder(20143, SuSyUtility.susyId('heated_light_cycle_oil'))
                 .liquid(new FluidBuilder().temperature(470))
                 .color(0xd1af77)
+                .flags(FLAMMABLE)
+                .build();
+
+        LiquefactionOil = new Material.Builder(20144, SuSyUtility.susyId('liquefaction_oil'))
+                .liquid()
+                .color(0x2d2f3b)
+                .flags(FLAMMABLE)
+                .build();
+
+        LightLiquefactionOil = new Material.Builder(20145, SuSyUtility.susyId('light_liquefaction_oil'))
+                .liquid()
+                .color(0x404252)
+                .flags(FLAMMABLE)
+                .build();
+
+        CrudeMediumLiquefactionOil = new Material.Builder(20146, SuSyUtility.susyId('crude_medium_liquefaction_oil'))
+                .liquid()
+                .color(0x13141c)
+                .flags(FLAMMABLE)
+                .build();
+
+        MediumLiquefactionOil = new Material.Builder(20147, SuSyUtility.susyId('medium_liquefaction_oil'))
+                .liquid()
+                .color(0x20222e)
+                .flags(FLAMMABLE)
+                .build();
+
+        RawLtSyncrude = new Material.Builder(20148, SuSyUtility.susyId('raw_lt_syncrude'))
+                .liquid()
+                .color(0x8b5a2b)
+                .flags(FLAMMABLE)
+                .build();
+
+        LtSyncrude = new Material.Builder(20149, SuSyUtility.susyId('lt_syncrude'))
+                .liquid()
+                .color(0xa67c52)
+                .flags(FLAMMABLE)
+                .build();
+
+        OxygenateSolution = new Material.Builder(20150, SuSyUtility.susyId('oxygenate_solution'))
+                .liquid()
+                .color(0x7f8c8d)
+                .flags(FLAMMABLE)
+                .build();
+
+        LtLightGases = new Material.Builder(20151, SuSyUtility.susyId('lt_light_gases'))
+                .gas()
+                .color(0xc4b484)
+                .flags(FLAMMABLE)
+                .build();
+
+        SyntheticWax = new Material.Builder(20152, SuSyUtility.susyId('synthetic_wax'))
+                .liquid()
+                .color(0xf7ddcb)
+                .flags(FLAMMABLE)
+                .build();
+
+        HtSyncrude = new Material.Builder(20153, SuSyUtility.susyId('ht_syncrude'))
+                .liquid()
+                .color(0x6e4b3a)
+                .flags(FLAMMABLE)
+                .build();
+
+        HtLightGases = new Material.Builder(20154, SuSyUtility.susyId('ht_light_gases'))
+                .gas()
+                .color(0xdea55f)
+                .flags(FLAMMABLE)
+                .build();
+
+        MethanolDehydrationOverheads = new Material.Builder(20155, SuSyUtility.susyId('methanol_dehydration_overheads'))
+                .gas()
+                .color(0xdec887)
                 .flags(FLAMMABLE)
                 .build();
     }
