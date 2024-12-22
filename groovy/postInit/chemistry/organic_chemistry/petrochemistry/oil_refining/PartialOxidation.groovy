@@ -25,6 +25,8 @@ def feedstocks = [
     heavy_gas_oil : new PartialOxidationFeedstock('heavy_gas_oil', 4120, 15880, 62235, 124),
     atmospheric_oil_residue : new PartialOxidationFeedstock('atmospheric_oil_residue', 8600, 31400, 123865, 248),
     vacuum_oil_residue : new PartialOxidationFeedstock('vacuum_oil_residue', 20990, 24010, 149035, 298),
+    clarified_slurry_oil : new PartialOxidationFeedstock('clarified_slurry_oil', 8600, 31400, 123865, 248),
+    visbreaking_residue : new PartialOxidationFeedstock('visbreaking_residue', 21920, 25080, 155660, 311)
 ]
 
 for (feedstock in feedstocks.values()) {
