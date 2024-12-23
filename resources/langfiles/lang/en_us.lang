@@ -2107,6 +2107,30 @@ susy.material.two_four_five_xylenol_mixture=2,4/5-Xylenol Mixture
 susy.material.cresol_novolacs_oligomer=Cresol Novolacs Oligomer
 susy.material.epoxy_cresol_novolacs=Epoxy Cresol Novolacs (ECN)
 
+# Biofuel Chain
+susy.material.deacidified_lipid=Deacidified Lipid
+susy.material.glycerol_methanol_solution=Glycerol Methanol Solution
+susy.material.glycerol_ethanol_solution=Glycerol Ethanol Solution
+susy.material.crude_glycerol=Crude Glycerol
+susy.material.crude_fatty_acid_methyl_ester=Crude Fatty Acid Methyl Ester (FAME)
+susy.material.crude_fatty_acid_ethyl_ester=Crude Fatty Acid Ethyl Ester (FAEE)
+susy.material.neutralized_fatty_acid_methyl_ester=Neutralized Fatty Acid Methyl Ester (FAME)
+susy.material.neutralized_fatty_acid_ethyl_ester=Neutralized Fatty Acid Ethyl Ester (FAEE)
+susy.material.unscrubbed_bio_diesel=Unscrubbed Bio Diesel
+susy.material.moist_bio_diesel=Moist Bio Diesel
+susy.material.bleaching_lipid_mix=Bleaching Lipid Mix
+susy.material.bleached_lipid=Bleached Lipid
+susy.material.heated_lipid=Heated Lipid
+susy.material.hydrodeoxygenation_reaction_outlet=Hydrodeoxygenation Reaction Outlet
+susy.material.crude_n_paraffin=Crude n-Paraffin
+susy.material.neutralized_n_paraffin=Neutralized n-Paraffin
+susy.material.green_naphtha=Green Naphtha
+susy.material.distilled_n_paraffin=Distilled n-Paraffin
+susy.material.isomerized_paraffin=Isomerized Paraffin
+susy.material.green_kerosene=Biojet Fuel
+susy.material.green_diesel=Green Diesel
+susy.material.acidic_hydrogen_vapor=Acidic Hydrogen Vapor
+
 # Isotopes
 
 # GregTech RecipeMaps
