@@ -1988,33 +1988,11 @@ susy.material.potassium_manganate=Манганат калия
 susy.material.lead_free_solder=Припой без свинца
 susy.material.cryogenic_solder=Криогенный припой
 susy.material.oxidized_manganate_solution=Раствор окисленного манганата
-susy.material.galvanized_steel=Оцинкованная сталь
 
-susy.material.incoloy_twenty=Инколой 20
-susy.material.incoloy_eight_two_five=Инколой 825
-susy.material.incoloy_nine_zero_eight=Инколой 908
-susy.material.rene=Рене N5
-susy.material.monel=Монель 500
-susy.material.stellite_j=Стеллит J
-susy.material.stellite_six=Стеллит 6
-susy.material.hsla_eighty_x=HSLA 980X
-susy.material.food_grade_stainless_steel=Пищевая нержавеющая сталь
-
-# Графеновая цепь
-susy.material.moist_argon=Влажный аргон
-susy.material.argon_hydrogen_mixture=Аргоно-водородная смесь
-susy.material.ammoniacal_argon_hydrogen_mixture=Аммиачная аргоноводородная смесь
-susy.material.acidic_argon_hydrogen_mixture=Кислотная аргоноводородная смесь
-susy.material.partially_liquefied_argon_hydrogen_mixture=Частично сжиженная аргоно-водородная смесь
-susy.material.cold_ammoniacal_argon_hydrogen_mixture=Холодная аммиачная аргоноводородная смесь
-susy.material.cold_argon_hydrogen_mixture=Холодная аргоноводородная смесь
-susy.material.lithium_carbonate_solution=Раствор карбоната лития
-susy.material.impure_lithium_carbonate_solution=Неочищенный раствор карбоната лития
-
-susy.material.impure_lithium_carbonate=Нечистый карбонат лития
-susy.material.washed_graphene=Промытый графен
-susy.material.distilled_graphene=Дистиллированный графен
-susy.material.dried_graphene=графен
+susy.material.cobalt_sulfate=Сульфат кобальта
+susy.material.cobalt_sulfate_solution=Раствор сульфата кобальта
+susy.material.lithium_nitrate=Нитрат лития
+susy.material.lithium_nitrate_solution=Раство нитрата лития
 
 # Изотопы
 
