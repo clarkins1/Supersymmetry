@@ -7,22 +7,20 @@
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "§bHydrogen§r is an essential resource in any oil refining operation, as it is required for §9hydrocracking§r, §edesulfurization§r, and the production of high quality fuel \u0026 lubricant feedstocks and additives. There are a variety of sources of hydrogen, listed below.\n\n- Coal pyrolysis is an excellent source of syngas, which can then be reformed and separated into hydrogen using a PSA.\n- Partial oxidation of unutilized oil fractions can also be a good source of syngas for hydrogen.\n- Steam reforming fuel gas, natural gas, and methane is another source of syngas.\n- Lastly, the catalytic reforming of heavy naphtha also provides hydrogen directly.",
+      "desc:8": "susy.quest.db.239028636.desc",
       "icon:10": {
-        "Count:3": 1,
         "id:8": "forge:bucketfilled",
         "tag:10": {
           "Amount:3": 1000,
           "FluidName:8": "hydrogen"
         }
       },
-      "name:8": "Maintaining Hydrogen Balance"
+      "name:8": "susy.quest.db.239028636.title"
     }
   },
   "questID:3": 239028636,
   "tasks:9": {
     "0:10": {
-      "index:3": 0,
       "taskID:8": "bq_standard:checkbox"
     }
   }
