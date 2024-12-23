@@ -2076,21 +2076,5 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xffebbb)
                 .build();
-
-        GreenNaphtha = new Material.Builder(4518, SuSyUtility.susyId('green_naphtha'))
-                .liquid()
-                .color(0xfffba1)
-                .build();
-
-
-        GreenKerosene = new Material.Builder(4519, SuSyUtility.susyId('green_kerosene'))
-                .liquid()
-                .color(0xf8f8f8)
-                .build();
-
-        GreenDiesel = new Material.Builder(4520, SuSyUtility.susyId('green_diesel'))
-                .liquid()
-                .color(0xffe6cd)
-                .build();
     }
 }

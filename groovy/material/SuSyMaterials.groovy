@@ -543,11 +543,8 @@ class SuSyMaterials {
         public static Material AcidicHydrogenVapor;
         public static Material CrudeNParaffin;
         public static Material NeutralizedNParaffin;
-        public static Material GreenNaphtha;
         public static Material DistilledNParaffin;
         public static Material IsomerizedParaffin;
-        public static Material GreenKerosene;
-        public static Material GreenDiesel;
 
         // Petrochem Materials   
 
