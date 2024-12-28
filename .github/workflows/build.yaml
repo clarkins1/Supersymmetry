@@ -26,7 +26,9 @@ jobs:
       run: |
         chmod +x ./packwiz
         ./packwiz curseforge export -o client.zip
+        ./packwiz list > modlist.txt
         mkdir -p ./buildOut/
+        mv ./modlist.txt ./buildOut/
         mv ./client.zip ./buildOut/
     - name: Bootstrap
       uses: actions/setup-java@v4
@@ -59,11 +61,6 @@ jobs:
         cd ..
           
         mv ./server/$serverPack buildOut/$serverPack
-    - name: Generate modlist
-      shell: bash
-      run: |
-          chmod +x ./packwiz
-          ./packwiz list > /buildOut/modlist
     - name: Automatic Releases
       uses: marvinpinto/action-automatic-releases@latest
       with:
@@ -74,5 +71,5 @@ jobs:
           files: |
             buildOut/client.zip
             buildOut/server.zip
-            buildOut/modlist
+            buildOut/modlist.txt
 
