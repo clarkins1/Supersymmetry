@@ -2053,7 +2053,7 @@ public class UnknownCompositionMaterials {
                 .color(0xffd0a2)
                 .build();
 
-        HydrodeoxygenationReactionOutlet = new Material.Builder(4513, SuSyUtility.susyId('hydrodeoxygenation_reaction_outlet'))
+        HydrotreatedLipidMixture = new Material.Builder(4513, SuSyUtility.susyId('hydrotreated_lipid_mixture'))
                 .liquid()
                 .color(0xfff7ef)
                 .build();

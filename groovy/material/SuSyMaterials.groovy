@@ -539,7 +539,7 @@ class SuSyMaterials {
         public static Material LipidBleachingMix;
         public static Material BleachedLipid;
         public static Material HeatedLipid;
-        public static Material HydrodeoxygenationReactionOutlet;
+        public static Material HydrotreatedLipidMixture;
         public static Material AcidicHydrogenVapor;
         public static Material CrudeNParaffin;
         public static Material NeutralizedNParaffin;

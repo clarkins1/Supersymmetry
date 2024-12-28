@@ -225,14 +225,14 @@ TBR.recipeBuilder()
         .fluidInputs(fluid('heated_lipid') * 250)
         .fluidInputs(fluid('hydrogen') * 8000)
         .notConsumable(ore('dustHydrotreatingCatalyst')) // Since molybdenum is EV
-        .fluidOutputs(fluid('hydrodeoxygenation_reaction_outlet') * 7000)
+        .fluidOutputs(fluid('hydrotreated_lipid_mixture') * 7000)
         .duration(tpbnp)
         .EUt(120)
         .buildAndRegister()
 
 // Separating out water & gases
 PHASE_SEPARATOR.recipeBuilder()
-        .fluidInputs(fluid('hydrodeoxygenation_reaction_outlet') * 7000)
+        .fluidInputs(fluid('hydrotreated_lipid_mixture') * 7000)
         .fluidOutputs(fluid('water') * 1500)
         .fluidOutputs(fluid('crude_n_paraffin') * 1000)
         .fluidOutputs(fluid('acidic_hydrogen_vapor') * 4500)
