@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master-ceu
+    - packwiz
 
 jobs:
   build:
@@ -37,32 +38,11 @@ jobs:
       run: |
         pip install requests
     - run: python build/download.py
-    - name: Download
+    - name: Generate modlist
       shell: bash
       run: |
-          serverPack="server.zip"
-  
-          java -jar build/server/packwiz-installer-bootstrap.jar -g -s server pack.toml
-  
-          zip -r $serverPack config
-          zip -r $serverPack groovy
-          zip -r $serverPack mods
-          zip -r $serverPack structures
-          zip -m $serverPack launch.sh
-  
-          cd ..
-  
-          mv ./server/$serverPack buildOut/$serverPack
-    - uses: actions/setup-java@v2
-      with:
-        distribution: 'adopt' # See 'Supported distributions' for available options
-        java-version: '8'
-    - run: java -version
-    - name: Run Build
-      run: |
-        python build/main.py
-      env:
-        CFAPIKEY: ${{ secrets.CFAPIKEY }}
+          chmod +x ./packwiz
+          ./packwiz list > /buildOut/modlist
     - name: Automatic Releases
       uses: marvinpinto/action-automatic-releases@latest
       with:
@@ -73,5 +53,5 @@ jobs:
           files: |
             buildOut/client.zip
             buildOut/server.zip
-            buildOut/modlist.html
+            buildOut/modlist
 
