@@ -4,7 +4,6 @@ on:
   push:
     branches:
     - master-ceu
-    - packwiz
 
 jobs:
   build:
@@ -38,6 +37,28 @@ jobs:
       run: |
         pip install requests
     - run: python build/download.py
+    - name: Download
+      shell: bash
+      run: |
+        serverPack="server.zip"
+          
+        cd build/server
+        java -jar packwiz-installer-bootstrap.jar -g -s server "https://raw.githubusercontent.com/Oganesson897/Supersymmetry/refs/heads/packwiz/pack.toml"
+          
+        zip -r $serverPack config
+        zip -r $serverPack groovy
+        zip -r $serverPack libraries
+        zip -r $serverPack mods
+        zip -r $serverPack structures
+          
+        zip -m $serverPack launch.sh
+        zip -m $serverPack forge-1.12.2-14.23.5.2860.jar
+        zip -m $serverPack LICENSE
+        zip -m $serverPack minecraft_server.1.12.2.jar
+          
+        cd ..
+          
+        mv ./server/$serverPack buildOut/$serverPack
     - name: Generate modlist
       shell: bash
       run: |
