@@ -8473,24 +8473,12 @@ file = "groovy/runConfig.json"
 hash = "04162bffe33a563cc8b8adb2e1383abe6efe730438a4747db3a2ead72d095d25"
 
 [[files]]
-file = "icon.png"
-hash = "41f677d21a3d711b06bc79c5fa0f1acd8ac54a26d6f0cf7ca1753b9cea7e5347"
-
-[[files]]
 file = "imgui.ini"
 hash = "310dcb70f6f2441750418dea3d62114eb3b0cdf6ac3b02a8526d6ff2d6cc11cd"
 
 [[files]]
 file = "journeymap/server/5.7/journeymap.server.default.config"
 hash = "fd8e9344f44a10fca5575ebe07ec35f4ecc7db13639f74156f73134747edc4f8"
-
-[[files]]
-file = "launch.sh"
-hash = "52dc575ab9172b076514ae46fdc9ea92bc47a375f362935d5a0ef8fa1771d828"
-
-[[files]]
-file = "manifest.json"
-hash = "d7d394f413fb4959f46ab8658d86c94e1b1002e7c26537129ef3e0a32c6fb58e"
 
 [[files]]
 file = "mods/ae2-extended-life.pw.toml"
