@@ -43,9 +43,10 @@ jobs:
       shell: bash
       run: |
         serverPack="server.zip"
+        cp LICENSE build/server/
           
         cd build/server
-        java -jar packwiz-installer-bootstrap.jar -g -s server "https://raw.githubusercontent.com/Oganesson897/Supersymmetry/refs/heads/packwiz/pack.toml"
+        java -jar packwiz-installer-bootstrap.jar ../../pack.toml
           
         zip -r $serverPack config
         zip -r $serverPack groovy
@@ -58,9 +59,9 @@ jobs:
         zip -m $serverPack LICENSE
         zip -m $serverPack minecraft_server.1.12.2.jar
           
-        cd ..
+        cd ../..
           
-        mv ./server/$serverPack buildOut/$serverPack
+        mv build/server/$serverPack buildOut/$serverPack
     - name: Automatic Releases
       uses: marvinpinto/action-automatic-releases@latest
       with:
