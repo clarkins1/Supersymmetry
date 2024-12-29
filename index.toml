@@ -9347,12 +9347,12 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/black-mesa-transit-system.pw.toml"
-hash = "1c75b9c30ed3574080ca187ee34d3f34c813d59e5a494fe4130eb08b78a1ec5c"
+hash = "eb4fd464daa95ea5b810dd477e830a815b02b394e20f35189119fd6c88cf9148"
 metafile = true
 
 [[files]]
 file = "resourcepacks/shadertech.pw.toml"
-hash = "76c3c3a8d161f58243c6839115a7430a61e178f4ef0909b324baa996b6a69ea7"
+hash = "2e01619443c033d6e8fc82f8f1fc428ba69ae4d4a3df80f667909ca6d725ba96"
 metafile = true
 
 [[files]]
