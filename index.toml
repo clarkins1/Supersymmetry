@@ -9001,6 +9001,11 @@ hash = "a98c572071cf97b6744a82b8b02f0c32d8299c40da28a6ec8693be0bd9156ece"
 metafile = true
 
 [[files]]
+file = "mods/nae2.pw.toml"
+hash = "108eab3cfbc1a3e6c73bcc27927979a84c58fd435ee929ab53bbc9926e6b5246"
+metafile = true
+
+[[files]]
 file = "mods/natures-compass.pw.toml"
 hash = "59c691bccb11a19c67a0272aae379c20d157d5240e7001b2d92d80bf555b88d0"
 metafile = true
