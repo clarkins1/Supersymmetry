@@ -7,7 +7,6 @@ fonts/
 journeymap/
 logs/
 saves/
-build/
 
 .curseclient
 usercache.json
