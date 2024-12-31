@@ -271,7 +271,7 @@ HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillati
 
     FLBR.recipeBuilder()
         .fluidInputs(fluid('methanol') * 4460)
-        .notConsumable(ore('catalystBedZsm5'))
+        .notConsumable(ore('catalystBedZsmFive'))
         .fluidOutputs(fluid('methanol_dehydration_overheads') * 580)
         .fluidOutputs(fluid('naphtha') * 420)
         .fluidOutputs(fluid('water') * 4460)

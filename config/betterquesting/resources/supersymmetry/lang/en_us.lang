@@ -1434,6 +1434,7 @@ susy.quest.db.690.title=Catalytic Cracking
 susy.quest.db.690.desc=Catalytic cracking is a powerful tool for turning heavier fractions into usable products for polymerization, aromatics (BTEX), and fuels. It requires a catalyst that needs to be regenerated with oxygen, and can crack residues and heavy gas oil.
 susy.quest.db.691.title=Coking
 susy.quest.db.691.desc=There are two forms of coking, fluid and delayed coking. Delayed coking is a slower process that produces more naphtha but is more energy intensive. It requires a vacuum distillation tower, coking tower, and a tube furnace. In fluid coking, the coke produced is converted to syngas, which can be used for chemical synthesis or steel production. Fluid coking is also a faster process, but requires some more infrastructure.
+susy.quest.db.692.title=HV Sensors
 susy.quest.db.692.desc=HV Sensors will be needed in several advanced pieces of technology.
 susy.quest.db.693.title=Gallium Phosphate
 susy.quest.db.693.desc=To make Gallium Phosphide crystals, you need to make Ammonium Dihydrogen Phosphate using the Batch Reactor, and Gallium Trioxide by roasting Gallium.
