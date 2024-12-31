@@ -1,28 +1,32 @@
 {
   "preRequisites:11": [
-    409
+    205
   ],
   "properties:10": {
     "betterquesting:10": {
-      "desc:8": "susy.quest.db.407.desc",
+      "desc:8": "susy.quest.db.1994804951.desc",
       "icon:10": {
         "id:8": "forge:bucketfilled",
         "tag:10": {
           "Amount:3": 1000,
-          "FluidName:8": "glycerol"
+          "FluidName:8": "gtfo_stearin"
         }
       },
-      "name:8": "susy.quest.db.407.title",
+      "name:8": "susy.quest.db.1994804951.title",
       "tasklogic:8": "OR"
     }
   },
-  "questID:3": 407,
+  "questID:3": 1994804951,
   "tasks:9": {
     "0:10": {
       "requiredFluids:9": {
         "0:10": {
           "Amount:3": 1000,
-          "FluidName:8": "glycerol"
+          "FluidName:8": "gtfo_stearin"
+        },
+        "1:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "fish_oil"
         }
       },
       "taskID:8": "bq_standard:fluid"
