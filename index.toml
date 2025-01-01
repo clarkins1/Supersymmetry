@@ -1,2 +1,6 @@
 hash-format = "sha256"
-files = []
+
+[[files]]
+file = "mods/bqutweaker.pw.toml"
+hash = "f8f29931bda2f7105367891185020f608516f1780e78de28c348bf6e4a2c7f7a"
+metafile = true
