@@ -150,11 +150,11 @@ alcohols.forEach { alcohol ->
 
         // Neutralization of Crude FAXEs
         MIXER.recipeBuilder()
-            .fluidInputs(fluid('diluted_hydrochloric_acid') * 100)
-            .fluidInputs(alcohol.getCrudeEster(2100))
-            .fluidOutputs(alcohol.getNeutralizedEster(2100))
-            .fluidOutputs(fluid('diluted_saltwater') * 100)
-            .duration(15)
+            .fluidInputs(fluid('diluted_hydrochloric_acid') * 1000)
+            .fluidInputs(alcohol.getCrudeEster(3500))
+            .fluidOutputs(alcohol.getNeutralizedEster(3500))
+            .fluidOutputs(fluid('diluted_saltwater') * 1000)
+            .duration(30)
             .EUt(7)
             .buildAndRegister()
 
