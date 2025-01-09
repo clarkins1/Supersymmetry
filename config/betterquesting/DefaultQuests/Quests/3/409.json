@@ -21,23 +21,29 @@
       "requiredFluids:9": {
         "0:10": {
           "Amount:3": 1000,
+          "FluidName:8": "gtfo_olive_oil"
+        },
+        "1:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "gtfo_soybean_oil"
+        },
+        "2:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "coconut_oil"
+        },
+        "3:10": {
+          "Amount:3": 1000,
           "FluidName:8": "seed_oil"
+        },
+        "4:10": {
+          "Amount:3": 1000,
+          "FluidName:8": "deacidified_lipid"
         }
       },
       "taskID:8": "bq_standard:fluid"
     },
     "1:10": {
       "index:3": 1,
-      "requiredFluids:9": {
-        "0:10": {
-          "Amount:3": 1000,
-          "FluidName:8": "fish_oil"
-        }
-      },
-      "taskID:8": "bq_standard:fluid"
-    },
-    "2:10": {
-      "index:3": 2,
       "taskID:8": "bq_standard:checkbox"
     }
   }
