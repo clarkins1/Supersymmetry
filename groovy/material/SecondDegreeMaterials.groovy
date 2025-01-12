@@ -742,5 +742,12 @@ public class SecondDegreeMaterials {
                 .colorAverage()
                 .build()
                 .setFormula("(Ar)(NH3)(H)", true)
+
+        AcidicHydrogenVapor = new Material.Builder(13119, SuSyUtility.susyId("acidic_hydrogen_vapor"))
+                .gas()
+                .components(Hydrogen * 6, CarbonDioxide * 1)
+                .color(0x003c74)
+                .build()
+                .setFormula("(H)8(CO2)", true);
     }
 }

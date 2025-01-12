@@ -2003,5 +2003,96 @@ public class UnknownCompositionMaterials {
                 .liquid()
                 .color(0xc8cca1)
                 .build();
+
+        // Skipped IDs : 4426-4499 for gtl & plat chain
+
+        DeacidifiedLipid = new Material.Builder(4500, SuSyUtility.susyId('deacidified_lipid'))
+                .liquid()
+                .color(0xe3ae64)
+                .build();
+
+        GlycerolMethanolSolution = new Material.Builder(4501, SuSyUtility.susyId('glycerol_methanol_solution'))
+                .liquid()
+                .color(0xb3de87)
+                .build();
+
+        GlycerolEthanolSolution = new Material.Builder(4502, SuSyUtility.susyId('glycerol_ethanol_solution'))
+                .liquid()
+                .color(0xc0de87)
+                .build();
+
+        CrudeGlycerol = new Material.Builder(4503, SuSyUtility.susyId('crude_glycerol'))
+                .liquid()
+                .color(0x96de87)
+                .build();
+
+        CrudeFattyAcidMethylEster = new Material.Builder(4504, SuSyUtility.susyId('crude_fatty_acid_methyl_ester'))
+                .liquid()
+                .color(0xffb100)
+                .build();
+
+        CrudeFattyAcidEthylEster = new Material.Builder(4505, SuSyUtility.susyId('crude_fatty_acid_ethyl_ester'))
+                .liquid()
+                .color(0xffa000)
+                .build();
+
+        NeutralizedFattyAcidMethylEster = new Material.Builder(4506, SuSyUtility.susyId('neutralized_fatty_acid_methyl_ester'))
+                .liquid()
+                .color(0xff8f00)
+                .build();
+
+        NeutralizedFattyAcidEthylEster = new Material.Builder(4507, SuSyUtility.susyId('neutralized_fatty_acid_ethyl_ester'))
+                .liquid()
+                .color(0xff6500)
+                .build();
+
+        UnscrubbedBioDiesel = new Material.Builder(4508, SuSyUtility.susyId('unscrubbed_bio_diesel'))
+                .liquid()
+                .color(0xc36100)
+                .build();
+
+        MoistBioDiesel = new Material.Builder(4509, SuSyUtility.susyId('moist_bio_diesel'))
+                .liquid()
+                .color(0xf77b00)
+                .build();
+
+        LipidBleachingMix = new Material.Builder(4510, SuSyUtility.susyId('bleaching_lipid_mix'))
+                .liquid()
+                .color(0xc29850)
+                .build();
+
+        BleachedLipid = new Material.Builder(4511, SuSyUtility.susyId('bleached_lipid'))
+                .liquid()
+                .color(0xd6c2a2)
+                .build();
+
+        HeatedLipid = new Material.Builder(4512, SuSyUtility.susyId('heated_lipid'))
+                .liquid()
+                .color(0xffd0a2)
+                .build();
+
+        HydrotreatedLipidMixture = new Material.Builder(4513, SuSyUtility.susyId('hydrotreated_lipid_mixture'))
+                .liquid()
+                .color(0xfff7ef)
+                .build();
+
+        CrudeNParaffin = new Material.Builder(4514, SuSyUtility.susyId('crude_n_paraffin'))
+                .liquid()
+                .color(0xededde)
+                .build();
+
+        NeutralizedNParaffin = new Material.Builder(4515, SuSyUtility.susyId('neutralized_n_paraffin'))
+                .liquid()
+                .color(0xf6f6ef)
+                .build();
+        DistilledNParaffin = new Material.Builder(4516, SuSyUtility.susyId('distilled_n_paraffin'))
+                .liquid()
+                .color(0xeff6f6)
+                .build();
+
+        IsomerizedParaffin = new Material.Builder(4517, SuSyUtility.susyId('isomerized_paraffin'))
+                .liquid()
+                .color(0xffebbb)
+                .build();
     }
 }
