@@ -8582,7 +8582,7 @@ metafile = true
 
 [[files]]
 file = "mods/bqutweaker.pw.toml"
-hash = "1932caeff10d12ca7adc6eec8559ac6ca8f9089becadcf8170f641baaa030c05"
+hash = "a03de1f48599c6ee4b4e5c283fc7b3bba3a4f5cd65cb61eaf0753482b1142206"
 metafile = true
 
 [[files]]
@@ -8718,16 +8718,6 @@ metafile = true
 [[files]]
 file = "mods/engineers-decor.pw.toml"
 hash = "179f486abe738fcd39bdf6309e2c8b6523368206273885832a5074e82cb023c1"
-metafile = true
-
-[[files]]
-file = "mods/extra-cells-2-samlam140330s-fork.pw.toml"
-hash = "28262ec39decadff86e83f6977671d15c89292002a4e62408ad3bfe37782526f"
-metafile = true
-
-[[files]]
-file = "mods/extracpus.pw.toml"
-hash = "135c4e5e80269ff97c17a36d75fda789b36c9d49b4992c1e372f8e766da98623"
 metafile = true
 
 [[files]]
@@ -9007,7 +8997,7 @@ metafile = true
 
 [[files]]
 file = "mods/nae2.pw.toml"
-hash = "108eab3cfbc1a3e6c73bcc27927979a84c58fd435ee929ab53bbc9926e6b5246"
+hash = "682aa3946d8cb15a808721ce919ee2175e457e393e975ab3e8f6c786bbe9285a"
 metafile = true
 
 [[files]]
