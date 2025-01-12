@@ -61,6 +61,9 @@ ROASTER.recipeBuilder()
     .EUt(Globals.voltAmps[2])
     .duration(200)
     .buildAndRegister()
+    
+// Antimony Trioxide Dust * 1
+mods.gregtech.electric_blast_furnace.removeByInput(120, [metaitem('dustStibnite')], [fluid('oxygen') * 3000])
 
 ROASTER.recipeBuilder()
     .inputs(ore('dustStibnite'))
@@ -93,7 +96,7 @@ EBF.recipeBuilder()
 
 BR.recipeBuilder()
     .notConsumable(ore('springCupronickel'))
-    .inputs(ore('dustTetrahedrite') * 4)
+    .inputs(ore('dustTetrahedrite') * 1)
     .inputs(ore('dustSodiumSulfide') * 18)
     .fluidInputs(fluid('gtfo_heated_water') * 12000)
     .outputs(metaitem('dustCopperISulfide') * 15)
