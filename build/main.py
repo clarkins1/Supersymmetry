@@ -58,7 +58,8 @@ def export_client_pack():
     print("Client Pack Exporting")
     subprocess.run(['chmod', '+x', './packwiz'], check=True)
     subprocess.run(['./packwiz', 'curseforge', 'export', '-o', 'client.zip'], check=True)
-    shutil.move('./client.zip', './buildOut/')
+    shutil.copy('./client.zip', './buildOut/')
+    os.remove('./client.zip')
     print("Client Pack Export Done")
 
 def export_server_pack():

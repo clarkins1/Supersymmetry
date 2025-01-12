@@ -1,4 +1,5 @@
 buildOut/
+build/server
 *client.zip
 .mixin.out/
 armourers_workshop/
