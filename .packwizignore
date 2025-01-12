@@ -1,0 +1,12 @@
+*.py
+*.dat
+*.md
+*.iml
+*.pickle
+LICENSE
+.gitignore
+
+.github/
+build/
+buildOut/
+.idea/
