@@ -1,6 +1,6 @@
 name = "Black Mesa Transit System"
 filename = "Black_Mesa.zip"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
