@@ -10,3 +10,5 @@ LICENSE
 build/
 buildOut/
 .idea/
+
+!*dimensionstack.dat
