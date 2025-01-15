@@ -38,13 +38,22 @@ def parse_args():
                         help="makes a folder with all the files symlinked for development. probally only works on linux")
     parser.add_argument("-c", "--client", action="store_true",
                         help="only builds the client pack")
+    parser.add_argument("--prefix",
+                        type=str,
+                        default="susy",
+                        help="prefix applied to questbook entries, typically the modpack id, defaults to susy")
+    parser.add_argument("--lang",
+                        type=str,
+                        default="en_us",
+                        help="what language the output language file is, defaults to en_us")
+
     return parser.parse_args()
 
 basePath = os.path.normpath(os.path.realpath(__file__)[:-7] + "..")
 
 def build(args):
     # Run questbook.py first
-    questbook.build(questbook.parse_args())
+    questbook.build(args)
 
     os.makedirs('./buildOut/', exist_ok=True)
 
