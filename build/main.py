@@ -5,6 +5,7 @@
 import argparse
 # if there is a problem with building, please let htmlcsjs know
 import os
+import sys
 import shutil
 import subprocess
 import zipfile
@@ -37,26 +38,45 @@ def parse_args():
                         help="makes a folder with all the files symlinked for development. probally only works on linux")
     parser.add_argument("-c", "--client", action="store_true",
                         help="only builds the client pack")
+    parser.add_argument("--prefix",
+                        type=str,
+                        default="susy",
+                        help="prefix applied to questbook entries, typically the modpack id, defaults to susy")
+    parser.add_argument("--lang",
+                        type=str,
+                        default="en_us",
+                        help="what language the output language file is, defaults to en_us")
+
     return parser.parse_args()
 
 basePath = os.path.normpath(os.path.realpath(__file__)[:-7] + "..")
 
 def build(args):
-
     # Run questbook.py first
-    questbook.build(questbook.parse_args())
+    questbook.build(args)
 
     os.makedirs('./buildOut/', exist_ok=True)
 
-    export_client_pack() # Client
-    export_server_pack() # Server
-    export_modlist() # Modlist
+    if args.clean:
+        shutil.rmtree(basePath + "/buildOut",
+                      ignore_errors=True)
+        sys.exit(0)
 
-    print("done")
+    refresh()
+    export_client_pack() # Client
+
+    if args.client:
+        return;
+
+    export_modlist()
+    export_server_pack()
+
+def refresh():
+    subprocess.run(['chmod', '+x', './packwiz'], check=True)
+    subprocess.run(['./packwiz', 'refresh'], check=True)
 
 def export_client_pack():
     print("Client Pack Exporting")
-    subprocess.run(['chmod', '+x', './packwiz'], check=True)
     subprocess.run(['./packwiz', 'curseforge', 'export', '-o', 'client.zip'], check=True)
     shutil.copy('./client.zip', './buildOut/')
     os.remove('./client.zip')
