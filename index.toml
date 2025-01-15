@@ -9083,7 +9083,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "groovy/classes/ChangeFlags.groovy"
-hash = "ddb8eac056d12a0e9c86535e057a9832a86060c92a03c0849eced44dfab8df93"
+hash = "8a34c93efac730ceab01ae8ffbff8e8b93c10a8b47d60b520004db8aec295ef1"
 
 [[files]]
 file = "groovy/classes/ICoolant.groovy"
@@ -9171,7 +9171,7 @@ hash = "1aa9d20b05023096ce5f87920f872ece46eedeaa4a6c145ffe8e55243ed008cd"
 
 [[files]]
 file = "groovy/material/SuSyMaterials.groovy"
-hash = "d350fd177d19d5894a724abf98073a901a27360070006c81f15cc831af350fb6"
+hash = "17521dc274e543a1987351bf598de3d18fad085092be3bd65692787d1897385a"
 
 [[files]]
 file = "groovy/material/ThermodynamicsMaterials.groovy"
@@ -9179,7 +9179,7 @@ hash = "9c3577e7829d0d80172e68429217d0b1170e7481fdda69c6accf59fd7ff0c85c"
 
 [[files]]
 file = "groovy/material/ThirdDegreeMaterials.groovy"
-hash = "ab869fcd55abc7efadea0161ec80db61384dfc8ba18e2e25e067555a441fb659"
+hash = "da084d4636a845b7d53114e74a827310261dff7e160fd928ce263454be70ab7b"
 
 [[files]]
 file = "groovy/material/UnknownCompositionMaterials.groovy"
@@ -9407,7 +9407,7 @@ hash = "c0868618133723594eeb6b0b19d18f497042dbfe00918e5845f62d838bf2c965"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/s_block/group1/LithiumChain.groovy"
-hash = "c09a8800d0a62a7dd1453703970a4dfbd0f74e3af83321a52f948dcc5cff7f59"
+hash = "b221a83287c9fb1b98eed600db73311f18ca6b153d3ac983ea0e455f98f392cd"
 
 [[files]]
 file = "groovy/postInit/chemistry/inorganic_chemistry/elements/s_block/group1/PotassiumChain.groovy"
@@ -9599,7 +9599,7 @@ hash = "4e4cba77e087a55b9d48b0e408cbd952a047745c0b3016ca710aee2a1ef17ff4"
 
 [[files]]
 file = "groovy/postInit/chemistry/organic_chemistry/polymers/RubberChain.groovy"
-hash = "84870a85e4d47a0d157502754d8ad0ae71bfb1c404bd575b2c7894379b361825"
+hash = "530cfb478f1b7be42f0c1f577b5364c88025762a5f0b99a5e685399047efc5a0"
 
 [[files]]
 file = "groovy/postInit/components/Batteries.groovy"
@@ -9899,7 +9899,7 @@ hash = "b1f83c2b7685b917c9309120c368bd4ba83679263a402a6e651f7f29b628ae55"
 
 [[files]]
 file = "groovy/postInit/mod/SusyCore.groovy"
-hash = "b96a8a9fef670fcbb9aa3fdec88a4c6bacfee22f12bd81dccbfc409cbf761f4a"
+hash = "af1cc597c467b1e214d8b4ef3bdd51406ff8d05e6eaa42eca2c9b7748726bd50"
 
 [[files]]
 file = "groovy/postInit/mod/TechGuns.groovy"
@@ -13685,7 +13685,7 @@ hash = "e88cbbdf24ecbcbf63eb608e6d049deee9ebb5eabacb680cfc3f1d7d92a80921"
 
 [[files]]
 file = "resources/langfiles/lang/en_us.lang"
-hash = "9119a8721418369f7494cc808820abf7849dbe77c6115da1521acf3e5c57d863"
+hash = "41ec8d076c9f1c4ce7cdd9117af5cda391c8f7888840327e128e52299615221a"
 
 [[files]]
 file = "resources/langfiles/lang/pl_pl.lang"

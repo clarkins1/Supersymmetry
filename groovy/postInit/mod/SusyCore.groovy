@@ -131,24 +131,34 @@ mods.gregtech.forge_hammer.removeByInput(16, [item('gregtech:ore_sulfur_0')], nu
 mods.gregtech.macerator.removeByInput(2, [item('gregtech:ore_sulfur_0')], null)
 
 // Armors
-crafting.addShaped("susy:simple_gas_mask", item('susy:susy_armor_item').withNbt(['damage': 0.0D]), [
+crafting.addShaped("susy:simple_gas_mask", item('susy:susy_armor', 0).withNbt(['damage': 0.0D]), [
     [item('gregtech:meta_item_1', 438), item('minecraft:paper'), item('gregtech:meta_item_1', 438)],
     [ore('string'), ore('dustCharcoal'), ore('string')],
     [null, item('minecraft:paper'), null]
 ])
 
-crafting.addShaped("susy:gas_mask", item('susy:susy_armor_item', 1), [
-    [ore('leather'), ore('plateGlass'), ore('leather')],
-    [ore('leather'), ore('leather'), ore('leather')],
+crafting.addShaped("susy:gas_mask", item('susy:susy_armor', 2), [
+    [metaitem('bound_leather'), ore('plateGlass'), metaitem('bound_leather')],
+    [metaitem('bound_leather'), metaitem('bound_leather'), metaitem('bound_leather')],
     [null, ore('pipeTinyFluidRubber'), ore('ringRubber')]
 ])
-crafting.addShaped("susy:gas_tank", item('susy:susy_armor_item', 2).withNbt(['maxOxygen': 1200.0D, 'oxygen': 0.0D]), [
-    [null, ore('pipeTinyFluidRubber'), ore('ringRubber')],
-    [ore('leather'), metaitem('fluid_cell'), ore('leather')]
+crafting.addShaped("susy:gas_tank", item('susy:susy_armor', 3).withNbt(['maxOxygen': 1200.0D, 'oxygen': 0.0D]), [
+    [metaitem('bound_leather'), null, null],
+    [metaitem('bound_leather'), ore('pipeTinyFluidRubber'), ore('ringRubber')],
+    [metaitem('bound_leather'), metaitem('fluid_cell'), metaitem('bound_leather')]
 ])
-crafting.addShapeless("susy:gas_tank_fill", item('susy:susy_armor_item', 2).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]), 
-    [item('susy:susy_armor_item', 2), 
-    metaitem('fluid_cell').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 1000]])])
+
+crafting.addShaped("susy:easy_cell", metaitem('fluid_cell'), [
+    [ore('toolHardHammer'), null],
+    [null, ore('plateSteel')]
+])
+
+crafting.addShapeless("susy:gas_tank_fill", item('susy:susy_armor', 3).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]), 
+    [item('susy:susy_armor', 2), 
+    metaitem('fluid_cell').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 1000]])
+])
+
+
 
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
@@ -158,7 +168,7 @@ mods.gregtech.assembler.recipeBuilder()
     .inputs(metaitem('mineral_wool') * 5)
     .inputs(ore('foilAsbestos') * 5)
     .fluidInputs(fluid('glass') * 144)
-    .outputs(item('susy:susy_armor_item', 3).withNbt(['damage': 0.0D]))
+    .outputs(item('susy:susy_armor', 4).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
@@ -171,15 +181,15 @@ mods.gregtech.assembler.recipeBuilder()
     .inputs(metaitem('mineral_wool') * 8)
     .inputs(ore('foilAsbestos') * 8)
     .inputs(metaitem('large_fluid_cell.steel'))
-    .outputs(item('susy:susy_armor_item', 4).withNbt(['maxOxygen': 1200.0D, 'oxygen': 0.0D]))
+    .outputs(item('susy:susy_armor', 5).withNbt(['maxOxygen': 1200.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
 crafting.shapelessBuilder()
     .name("susy:asbestos_tank_fill")
-    .output(item('susy:susy_armor_item', 4).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
-    .input(item('susy:susy_armor_item', 4).mark('tank')) 
+    .output(item('susy:susy_armor', 5).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
+    .input(item('susy:susy_armor', 5).mark('tank')) 
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
         .transform({ _ -> metaitem('large_fluid_cell.steel')}))
     .recipeFunction { output, inputs, info -> 
@@ -191,7 +201,7 @@ mods.gregtech.assembler.recipeBuilder()
     .inputs(item('minecraft:leather_leggings'))
     .inputs(metaitem('mineral_wool') * 7)
     .inputs(ore('foilAsbestos') * 7)
-    .outputs(item('susy:susy_armor_item', 5).withNbt(['damage': 0.0D]))
+    .outputs(item('susy:susy_armor', 6).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
@@ -201,23 +211,23 @@ mods.gregtech.assembler.recipeBuilder()
     .inputs(item('minecraft:leather_boots'))
     .inputs(metaitem('mineral_wool') * 4)
     .inputs(ore('foilAsbestos') * 4)
-    .outputs(item('susy:susy_armor_item', 6).withNbt(['damage': 0.0D]))
+    .outputs(item('susy:susy_armor', 7).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
 
 mods.gregtech.assembler.recipeBuilder()
     .inputs(item('susy:meta_item', 1))
-    .inputs(item('susy:susy_armor_item', 4))
-    .outputs(item('susy:susy_armor_item', 7).withNbt(['maxOxygen': 2400.0D, 'oxygen': 0.0D]))
+    .inputs(item('susy:susy_armor', 5))
+    .outputs(item('susy:susy_armor', 8).withNbt(['maxOxygen': 3600.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
     .buildAndRegister()
     
 crafting.shapelessBuilder()
     .name("susy:rebreather_tank_fill")
-    .output(item('susy:susy_armor_item', 7).withNbt(['maxOxygen': 2400.0D, 'oxygen': 2400.0D]))
-    .input(item('susy:susy_armor_item', 7).mark('tank')) 
+    .output(item('susy:susy_armor', 8).withNbt(['maxOxygen': 3600.0D, 'oxygen': 3600.0D]))
+    .input(item('susy:susy_armor', 8).mark('tank')) 
     .input(metaitem('dustLithiumHydroxide'))
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
         .transform({ _ -> metaitem('large_fluid_cell.steel')}))
@@ -227,70 +237,73 @@ crafting.shapelessBuilder()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor_item', 3))
-    .outputs(item('susy:susy_armor_item', 8).withNbt(['damage': 0.0D]))
+    .inputs(item('susy:susy_armor', 4))
+    .outputs(item('susy:susy_armor', 9).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor_item', 4))
-    .outputs(item('susy:susy_armor_item', 9).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
+    .inputs(item('susy:susy_armor', 5))
+    .outputs(item('susy:susy_armor', 10).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
+    .duration(400)
+    .EUt(Globals.voltAmps[3])
+    .buildAndRegister()
+
+// Rebreather tanks can be upgraded too.
+mods.gregtech.cvd.recipeBuilder()
+    .inputs(metaitem('dustAluminium'))
+    .inputs(item('susy:susy_armor', 7))
+    .outputs(item('susy:susy_armor', 10).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor_item', 7))
-    .outputs(item('susy:susy_armor_item', 9).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
+    .inputs(item('susy:susy_armor', 6))
+    .outputs(item('susy:susy_armor', 11).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor_item', 5))
-    .outputs(item('susy:susy_armor_item', 10).withNbt(['damage': 0.0D]))
-    .duration(400)
-    .EUt(Globals.voltAmps[3])
-    .buildAndRegister()
-
-mods.gregtech.cvd.recipeBuilder()
-    .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor_item', 6))
-    .outputs(item('susy:susy_armor_item', 11).withNbt(['damage': 0.0D]))
+    .inputs(item('susy:susy_armor', 7))
+    .outputs(item('susy:susy_armor', 12).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
 crafting.shapelessBuilder()
     .name("susy:reflective_tank_fill")
-    .output(item('susy:susy_armor_item', 4).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
-    .input(item('susy:susy_armor_item', 4).mark('tank')) 
+    .output(item('susy:susy_armor', 7).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
+    .input(item('susy:susy_armor', 7).mark('tank')) 
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
         .transform({ _ -> metaitem('large_fluid_cell.steel')}))
     .recipeFunction { output, inputs, info -> 
         output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
     }.register()
 
+// Filtered tank
 mods.gregtech.assembler.recipeBuilder()
     .inputs(metaitem('dustMolecularSieve'))
+    .inputs(metaitem('plateStainlessSteel') * 4)
     .inputs(item('susy:meta_item', 1))
-    .inputs(item('susy:susy_armor_item', 9))
-    .outputs(item('susy:susy_armor_item', 12).withNbt(['maxOxygen': -1.0D, 'oxygen': 0.0D]))
+    .inputs(item('susy:susy_armor', 10))
+    .outputs(item('susy:susy_armor', 13).withNbt(['maxOxygen': -1.0D, 'oxygen': 0.0D]))
     .duration(400)
-    .EUt(Globals.voltAmps[1])
+    .EUt(Globals.voltAmps[3])
     .buildAndRegister()
 
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(1)
-    .inputs(ore('threadPolybenzimidazole'))
+    .inputs(ore('threadPolybenzimidazole') * 10)
     .inputs(metaitem('plateNomex') * 5)
     .inputs(metaitem('pipeSmallFluidEthyleneVinylAcetate'))
     .fluidInputs(fluid('borosilicate_glass') * 288)
-    .outputs(item('susy:susy_armor_item', 13))
+    .outputs(item('susy:susy_armor', 14))
     .duration(400)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
@@ -298,30 +311,34 @@ mods.gregtech.assembler.recipeBuilder()
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(2)
     .inputs(metaitem('plateNomex') * 8)
+    .inputs(ore('threadPolybenzimidazole') * 20)
+    .inputs(metaitem('dustMolecularSieve') * 4)
     .inputs(metaitem('pipeSmallFluidEthyleneVinylAcetate') * 2)
     .inputs(metaitem('electric.piston.ev'))
     .inputs(metaitem('rotorTitanium'))
     .inputs(metaitem('large_fluid_cell.stainless_steel'))
-    .outputs(item('susy:susy_armor_item', 14))
+    .outputs(item('susy:susy_armor', 15))
     .duration(400)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
 
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(3)
-    .inputs(metaitem('pipeSmallFluidEthyleneVinylAcetate') * 2)
+    .inputs(ore('threadPolybenzimidazole') * 16)
+    .inputs(metaitem('pipeSmallFluidEthyleneVinylAcetate') * 3)
     .inputs(metaitem('plateNomex') * 7)
-    .outputs(item('susy:susy_armor_item', 15))
+    .outputs(item('susy:susy_armor', 16))
     .duration(400)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()
     
 mods.gregtech.assembler.recipeBuilder()
     .circuitMeta(4)
+    .inputs(ore('threadPolybenzimidazole') * 14)
     .inputs(metaitem('pipeSmallFluidEthyleneVinylAcetate') * 2)
     .inputs(metaitem('plateNomex') * 4)
     .inputs(metaitem('electric.pump.mv'))
-    .outputs(item('susy:susy_armor_item', 16))
+    .outputs(item('susy:susy_armor', 17))
     .duration(400)
     .EUt(Globals.voltAmps[4])
     .buildAndRegister()

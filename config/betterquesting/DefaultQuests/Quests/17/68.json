@@ -1,6 +1,8 @@
 {
   "preRequisites:11": [
-    67
+    610444332,
+    1112000445,
+    1403511944
   ],
   "properties:10": {
     "betterquesting:10": {
@@ -9,7 +11,8 @@
         "Damage:2": 3,
         "id:8": "susy:susy_stone_smooth"
       },
-      "name:8": "susy.quest.db.68.title"
+      "name:8": "susy.quest.db.68.title",
+      "questlogic:8": "OR"
     }
   },
   "questID:3": 68,
