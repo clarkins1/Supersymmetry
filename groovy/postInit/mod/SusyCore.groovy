@@ -1,5 +1,6 @@
 import globals.Globals
 import globals.RecyclingHelper
+import gregtech.api.recipes.ingredients.nbtmatch.*
 
 crafting.addShaped("susy:basic_structural_casing", item('susy:susy_multiblock_casing', 3) * 6, [
     [ore('screwWroughtIron'), ore('plateWroughtIron'), ore('craftingToolHardHammer')],
@@ -218,7 +219,7 @@ mods.gregtech.assembler.recipeBuilder()
 
 mods.gregtech.assembler.recipeBuilder()
     .inputs(item('susy:meta_item', 1))
-    .inputs(item('susy:susy_armor', 5))
+    .inputNBT(item('susy:susy_armor', 5), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 8).withNbt(['maxOxygen': 3600.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[1])
@@ -226,8 +227,8 @@ mods.gregtech.assembler.recipeBuilder()
     
 crafting.shapelessBuilder()
     .name("susy:rebreather_tank_fill")
-    .output(item('susy:susy_armor', 8).withNbt(['maxOxygen': 3600.0D, 'oxygen': 3600.0D]))
-    .input(item('susy:susy_armor', 8).mark('tank')) 
+    .output(item('susy:susy_armor', 9).withNbt(['maxOxygen': 3600.0D, 'oxygen': 3600.0D]))
+    .input(item('susy:susy_armor', 9).mark('tank')) 
     .input(metaitem('dustLithiumHydroxide'))
     .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
         .transform({ _ -> metaitem('large_fluid_cell.steel')}))
@@ -237,7 +238,7 @@ crafting.shapelessBuilder()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor', 4))
+    .inputNBT(item('susy:susy_armor', 4), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 9).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
@@ -245,16 +246,26 @@ mods.gregtech.cvd.recipeBuilder()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor', 5))
+    .inputNBT(item('susy:susy_armor', 5), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 10).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
+
+crafting.shapelessBuilder()
+    .name("susy:reflective_tank_fill")
+    .output(item('susy:susy_armor', 10).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
+    .input(item('susy:susy_armor', 10).mark('tank')) 
+    .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
+        .transform({ _ -> metaitem('large_fluid_cell.steel')}))
+    .recipeFunction { output, inputs, info -> 
+        output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
+    }.register()
 
 // Rebreather tanks can be upgraded too.
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor', 7))
+    .inputNBT(item('susy:susy_armor', 4), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 10).withNbt(['damage': 0.0D, 'maxOxygen': 1200.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
@@ -262,7 +273,7 @@ mods.gregtech.cvd.recipeBuilder()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor', 6))
+    .inputNBT(item('susy:susy_armor', 6), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 11).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
@@ -270,28 +281,18 @@ mods.gregtech.cvd.recipeBuilder()
 
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputs(item('susy:susy_armor', 7))
+    .inputNBT(item('susy:susy_armor', 7), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 12).withNbt(['damage': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
     .buildAndRegister()
-
-crafting.shapelessBuilder()
-    .name("susy:reflective_tank_fill")
-    .output(item('susy:susy_armor', 7).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
-    .input(item('susy:susy_armor', 7).mark('tank')) 
-    .input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-        .transform({ _ -> metaitem('large_fluid_cell.steel')}))
-    .recipeFunction { output, inputs, info -> 
-        output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
-    }.register()
 
 // Filtered tank
 mods.gregtech.assembler.recipeBuilder()
     .inputs(metaitem('dustMolecularSieve'))
     .inputs(metaitem('plateStainlessSteel') * 4)
     .inputs(item('susy:meta_item', 1))
-    .inputs(item('susy:susy_armor', 10))
+    .inputNBT(item('susy:susy_armor', 10), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 13).withNbt(['maxOxygen': -1.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
