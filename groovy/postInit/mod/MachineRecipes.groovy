@@ -995,6 +995,16 @@ for (i = 1; i <= 8; i++) {
 	])
 }
 
+// Incinerator
+
+for (i = 1; i <= 4; i++) {
+	RecyclingHelper.addShaped("gregtech:incinerator." + Globals.voltageTiers[i], metaitem('incinerator.' + Globals.voltageTiers[i]), [
+			[circuits[i], pumps[i], circuits[i]],
+			[tieredQuadCables[i], hulls[i], tieredQuadCables[i]],
+			[tieredSprings[i], tieredSprings[i], tieredSprings[i]]
+	])
+}
+
 // Bath Condenser
 
 RecyclingHelper.addShaped("gregtech:bath_condenser", metaitem('bath_condenser'), [
