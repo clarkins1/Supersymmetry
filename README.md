@@ -72,7 +72,6 @@ Special thanks to our volunteers:
 - Science Demon • Questbook work, German translation and bug fixes
 
 ## Development Tips
-> Please download [Packwiz](https://packwiz.infra.link/installation/) to the current directory manually.  
 > [Full Usage - Packwiz Tutorial](https://packwiz.infra.link/tutorials/creating/getting-started/)
 - Add mod: `packwiz cf add <project name>` ([Full Usage](https://packwiz.infra.link/tutorials/creating/adding-mods/))
 - Refresh Hash: `packwiz refresh`
@@ -82,7 +81,6 @@ Special thanks to our volunteers:
 - Client only mod: [rewrite <mod>.pw.toml#side manually](https://packwiz.infra.link/reference/pack-format/mod-toml/#properties)
 
 ## Building the pack
-1. Please download [Packwiz](https://packwiz.infra.link/installation/) to the current directory manually.
-2. Run `pip install requests` first to install required package.
-3. Run `python build/main.py`.
-4. Check `buildOut` folder.
+1. Run `pip install requests` first to install required package.
+2. Run `python build/main.py`.
+3. Check `buildOut` folder.
