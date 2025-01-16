@@ -3,7 +3,6 @@
 """build client & server bundles"""
 
 import argparse
-# if there is a problem with building, please let htmlcsjs know
 import os
 import sys
 import shutil
@@ -54,10 +53,7 @@ def packwiz():
         subprocess.run(['chmod', '+x', './packwiz'], check=True)
         return './packwiz'
     if os.name == 'nt':
-        if os.path.isfile(basePath + "/packwiz.exe"):
-            return 'packwiz.exe'
-        else:
-            raise RuntimeError('Please download Packwiz to the current work folder manually.')
+        return 'packwiz.exe'
 
 basePath = os.path.normpath(os.path.realpath(__file__)[:-7] + "..")
 packwizName = packwiz()
