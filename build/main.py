@@ -113,7 +113,6 @@ def export_server_pack():
 
         for file in ['launch.sh', 'forge-1.12.2-14.23.5.2860.jar', 'LICENSE', 'minecraft_server.1.12.2.jar']:
             zipf.write(file, file)
-            os.remove(file)
 
     os.chdir("../..")
     shutil.move(f"build/server/{server_pack}", f"buildOut/{server_pack}")
