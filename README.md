@@ -72,7 +72,6 @@ Special thanks to our volunteers:
 - Science Demon • Questbook work, German translation and bug fixes
 
 ## Development Tips
-> Please download [Packwiz](https://packwiz.infra.link/installation/) to the current directory manually.  
 > [Full Usage - Packwiz Tutorial](https://packwiz.infra.link/tutorials/creating/getting-started/)
 - Add mod: `packwiz cf add <project name>` ([Full Usage](https://packwiz.infra.link/tutorials/creating/adding-mods/))
 - Refresh Hash: `packwiz refresh`
@@ -82,13 +81,6 @@ Special thanks to our volunteers:
 - Client only mod: [rewrite <mod>.pw.toml#side manually](https://packwiz.infra.link/reference/pack-format/mod-toml/#properties)
 
 ## Building the pack
-### Client Pack
-1. Download [Packwiz](https://packwiz.infra.link/installation/) to the current directory.
-2. Run `packwiz cf export` to export the client pack.
-3. The export pack will generate in the root directory.
-### Server Pack
-> Server pack is not recommended for manually install. Recommended to go to the release page to download.
-1. Download [packwiz-installer-bootstrap](./build/server/packwiz-installer-bootstrap.jar) to a new directory.
-2. Run `java -jar packwiz-installer-bootstrap.jar <local refreshed pack.toml>` to install server.
-3. Download [forge installer](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html) and run it manually to download libraries and server jar.
-4. Copy [launch.sh](./build/server/launch.sh) to the server directory.
+1. Run `pip install requests` first to install required package.
+2. Run `python build/main.py`.
+3. Check `buildOut` folder.

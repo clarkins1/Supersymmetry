@@ -19,7 +19,7 @@
             "Durability:3": 0,
             "HarvestLevel:3": 1,
             "Material:8": "gregtech:flint",
-            "MaxDurability:3": 31,
+            "MaxDurability:3": 63,
             "ToolSpeed:5": 4.0
           },
           "HideFlags:3": 2
@@ -50,7 +50,7 @@
               "Durability:3": 0,
               "HarvestLevel:3": 1,
               "Material:8": "gregtech:flint",
-              "MaxDurability:3": 95,
+              "MaxDurability:3": 127,
               "ToolSpeed:5": 2.0
             },
             "HideFlags:3": 2
@@ -68,7 +68,7 @@
               "Durability:3": 0,
               "HarvestLevel:3": 1,
               "Material:8": "gregtech:flint",
-              "MaxDurability:3": 95
+              "MaxDurability:3": 127
             },
             "HideFlags:3": 2
           }
@@ -84,7 +84,7 @@
               "AttackSpeed:5": 3.0,
               "Durability:3": 0,
               "Material:8": "gregtech:flint",
-              "MaxDurability:3": 95
+              "MaxDurability:3": 127
             },
             "HideFlags:3": 2
           }
