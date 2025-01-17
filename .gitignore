@@ -19,7 +19,6 @@ index.toml
 *.log
 *.txt
 *.dll
-*.exe
 
 build/modlist.*
 config/InvTweaks.cfg
