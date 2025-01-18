@@ -1918,6 +1918,8 @@ class SuSyMaterials {
         public static Material OxalicAcidSolution;
         public static Material GalliumSulfateSolution;
         public static Material FormicAcidWaterAzeotrope;
+        public static Material LithiumHydroxideMotherLiquor;
+        public static Material LithiumHydroxideMonohydrate;
 
         // Thermodynamics Materials
 
