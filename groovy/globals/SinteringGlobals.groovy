@@ -50,7 +50,8 @@ class SinteringGlobals {
 
     public static sintering_fuels = [
         new Combustible('methane', false, 10, 50, 'carbon_dioxide', 5),
-        new Combustible('syngas', false, 10, 50, 'carbon_dioxide', 5),
+        new Combustible('hydrogen_rich_syngas', false, 10, 50, 'carbon_dioxide', 5),
+        new Combustible('monoxide_rich_syngas', false, 10, 50, 'carbon_dioxide', 5),
         new Combustible('natural_gas', false, 10, 50, 'carbon_dioxide', 5),
         new Combustible('plasma.helium', true, 10, 5, 'helium', 10)
     ]
