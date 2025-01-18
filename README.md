@@ -72,6 +72,7 @@ Special thanks to our volunteers:
 - Whatsapp • Structures, textures and feedback
 - Science Demon • Questbook work, German translation and bug fixes
 - [Siryeet3000](https://github.com/Siryeet3000) • Structures
+- Celeryman • Structures
 
 ## Development Tips
 > [Full Usage - Packwiz Tutorial](https://packwiz.infra.link/tutorials/creating/getting-started/)
