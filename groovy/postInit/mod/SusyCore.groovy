@@ -262,26 +262,6 @@ crafting.shapelessBuilder()
         output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
     }.register()
 
-crafting.shapelessBuilder()
-		.name("susy:filtered_tank_fill")
-		.output(item('susy:susy_armor', 13).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
-		.input(item('susy:susy_armor', 13).mark('tank'))
-		.input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-				.transform({ _ -> metaitem('large_fluid_cell.steel')}))
-		.recipeFunction { output, inputs, info ->
-			output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
-		}.register()
-
-crafting.shapelessBuilder()
-		.name("susy:nomex_tank_fill")
-		.output(item('susy:susy_armor', 15).withNbt(['maxOxygen': 1200.0D, 'oxygen': 1200.0D]))
-		.input(item('susy:susy_armor', 15).mark('tank'))
-		.input(metaitem('large_fluid_cell.steel').withNbt(['Fluid': ['FluidName': 'air', 'Amount': 8000]])
-				.transform({ _ -> metaitem('large_fluid_cell.steel')}))
-		.recipeFunction { output, inputs, info ->
-			output.getTagCompound().setDouble("damage", inputs['tank'].getTagCompound().getDouble("damage"))
-		}.register()
-
 // Rebreather tanks can be upgraded too.
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
