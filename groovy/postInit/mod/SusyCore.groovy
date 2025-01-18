@@ -265,7 +265,7 @@ crafting.shapelessBuilder()
 // Rebreather tanks can be upgraded too.
 mods.gregtech.cvd.recipeBuilder()
     .inputs(metaitem('dustAluminium'))
-    .inputNBT(item('susy:susy_armor', 4), NBTMatcher.ANY, NBTCondition.ANY)
+    .inputNBT(item('susy:susy_armor', 8), NBTMatcher.ANY, NBTCondition.ANY)
     .outputs(item('susy:susy_armor', 10).withNbt(['damage': 0.0D, 'oxygen': 0.0D]))
     .duration(400)
     .EUt(Globals.voltAmps[3])
