@@ -2,7 +2,7 @@ import static globals.Petrochemistry.*
 
 DT = recipemap('sieve_distillation')
 BCR = recipemap('bubble_column_reactor')
-SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT = recipemap('single_column_cryogenic_distillation')
+HIGH_PRESSURE_DISTILLATION_TOWER = recipemap('high_pressure_cryogenic_distillation')
 
 // Debutanization
 
@@ -40,7 +40,7 @@ DT.recipeBuilder()
     .fluidOutputs(fluid('sulfuric_propane_fuel_gas') * 400)
     .duration(40)
     .EUt(30)
-    .buildAndRegister()
+    .buildAndRegister() 
 
 DT.recipeBuilder()
     .fluidInputs(fluid('fuel_gas') * 1000)
@@ -118,7 +118,7 @@ DT.recipeBuilder() // Mwt: 29.145
     .EUt(30)
     .buildAndRegister()
 
-SINGLE_COLUMN_CRYOGENIC_DISTILLATION_PLANT.recipeBuilder() // Mwt: 21.8698
+HIGH_PRESSURE_DISTILLATION_TOWER.recipeBuilder() // Mwt: 21.8698
     .fluidInputs(fluid('catalytic_light_gases') * 1000)
     .fluidOutputs(fluid('ethane') * 270)
     .fluidOutputs(fluid('ethylene') * 170)

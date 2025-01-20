@@ -490,10 +490,15 @@ CoalGas.setDuration(90);
 CoalGas.setAmountToBurn(160);
 CoalGas.setByproductAmount(750);
 
-def Syngas = new IFluidFuel('syngas', 'flue_gas');
-Syngas.setDuration(200);
-Syngas.setAmountToBurn(160);
-Syngas.setByproductAmount(1500);
+def HydrogenRichSyngas = new IFluidFuel('hydrogen_rich_syngas', 'flue_gas');
+HydrogenRichSyngas.setDuration(60);
+HydrogenRichSyngas.setAmountToBurn(160);
+HydrogenRichSyngas.setByproductAmount(1500);
+
+def MonoxideRichSyngas = new IFluidFuel('monoxide_rich_syngas', 'flue_gas');
+MonoxideRichSyngas.setDuration(50);
+MonoxideRichSyngas.setAmountToBurn(160);
+MonoxideRichSyngas.setByproductAmount(1500);
 
 def Ethylene = new IFluidFuel('ethylene', 'flue_gas');
 Ethylene.setDuration(85);
@@ -531,7 +536,7 @@ Hydrogen.setAmountToBurn(160);
 Hydrogen.setByproductAmount(80);
 
 def Methanol = new IFluidFuel('methanol', 'flue_gas');
-Methanol.setDuration(40);
+Methanol.setDuration(20);
 Methanol.setAmountToBurn(10);
 Methanol.setByproductAmount(1000);
 Methanol.setIsRefinedFuel(true);
@@ -642,7 +647,8 @@ def FluidFuels = [
         Toluene,
         WoodGas,
         CoalGas,
-        Syngas,
+        HydrogenRichSyngas,
+        MonoxideRichSyngas,
         Ethylene,
         Ammonia,
         Propene,

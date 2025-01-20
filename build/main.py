@@ -3,7 +3,6 @@
 """build client & server bundles"""
 
 import argparse
-# if there is a problem with building, please let htmlcsjs know
 import os
 import sys
 import shutil
@@ -49,7 +48,15 @@ def parse_args():
 
     return parser.parse_args()
 
+def packwiz():
+    if os.name == 'posix':
+        subprocess.run(['chmod', '+x', './packwiz'], check=True)
+        return './packwiz'
+    if os.name == 'nt':
+        return 'packwiz.exe'
+
 basePath = os.path.normpath(os.path.realpath(__file__)[:-7] + "..")
+packwizName = packwiz()
 
 def build(args):
     # Run questbook.py first
@@ -66,18 +73,17 @@ def build(args):
     export_client_pack() # Client
 
     if args.client:
-        return;
+        return
 
     export_modlist()
     export_server_pack()
 
 def refresh():
-    subprocess.run(['chmod', '+x', './packwiz'], check=True)
-    subprocess.run(['./packwiz', 'refresh'], check=True)
+    subprocess.run([packwizName, 'refresh'], check=True)
 
 def export_client_pack():
     print("Client Pack Exporting")
-    subprocess.run(['./packwiz', 'curseforge', 'export', '-o', 'client.zip'], check=True)
+    subprocess.run([packwizName, 'curseforge', 'export', '-o', 'client.zip'], check=True)
     shutil.copy('./client.zip', './buildOut/')
     os.remove('./client.zip')
     print("Client Pack Export Done")
@@ -91,7 +97,7 @@ def export_server_pack():
     shutil.copy("LICENSE", "build/server/LICENSE")
 
     os.chdir("build/server")
-    subprocess.run(['java', '-jar', 'packwiz-installer-bootstrap.jar', '../../pack.toml'], check=True)
+    subprocess.run(['java', '-jar', 'packwiz-installer-bootstrap.jar', '-s', 'server', '../../pack.toml'], check=True)
 
     with zipfile.ZipFile(server_pack, 'w') as zipf:
         for folder in ['config', 'groovy', 'libraries', 'mods', 'structures']:
@@ -103,7 +109,6 @@ def export_server_pack():
 
         for file in ['launch.sh', 'forge-1.12.2-14.23.5.2860.jar', 'LICENSE', 'minecraft_server.1.12.2.jar']:
             zipf.write(file, file)
-            os.remove(file)
 
     os.chdir("../..")
     shutil.move(f"build/server/{server_pack}", f"buildOut/{server_pack}")
@@ -111,7 +116,7 @@ def export_server_pack():
 
 def export_modlist():
     print("Modlist Exporting")
-    result = subprocess.run(['./packwiz', 'list'], capture_output=True, text=True).stdout.strip().split('\n')
+    result = subprocess.run([packwizName, 'list'], capture_output=True, encoding='utf-8').stdout.strip().split('\n')
     with open(basePath + "/buildOut/modlist.html", "w") as file:
         data = "<html><body><h1>Modlist</h1><ul>"
         for mod in result:
