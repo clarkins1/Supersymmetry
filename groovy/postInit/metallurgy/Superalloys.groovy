@@ -170,6 +170,10 @@ mods.jei.ingredient.removeAndHide(metaitem('springHslaSteel'));
 mods.jei.ingredient.removeAndHide(metaitem('stickLongHslaSteel'));
 mods.jei.ingredient.removeAndHide(metaitem('plateDoubleHslaSteel'));
 
+crafting.replaceShaped("gcym:casing_high_temperature", ore('casing_high_temperature'), [
+        [metaitem('plateTitanium'), ore('craftingToolHammer'), metaitem('plateTitanium')],
+        [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
+        [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
 /*
     Blocks from GT superalloys need to be removed (block, frame, sheeted frame) and liquids
     Recipes for GCYM casings need to be changed to use SuSy superalloys, currently they still have recipes with old ones
