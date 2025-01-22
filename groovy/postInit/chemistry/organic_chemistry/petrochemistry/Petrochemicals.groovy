@@ -126,7 +126,7 @@ DT.recipeBuilder()
 // n-Hexane superfractionation
 DT.recipeBuilder()
     .fluidInputs(fluid('light_naphtha') * 1000)
-    .fluidOutputs(fluid('n_hexane') * 150)
+    .fluidOutputs(fluid('hexane') * 150)
     .fluidOutputs(fluid('dehexanized_naphtha') * 850)
     .duration(600)
     .EUt(30)
