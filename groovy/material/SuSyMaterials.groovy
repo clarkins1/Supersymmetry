@@ -732,6 +732,7 @@ class SuSyMaterials {
         public static Material FluidCrackedVacuumOilResidue;
         public static Material CokingEffluents;
         public static Material RPOne;
+        public static Material DehexanizedNaphtha;
 
         // First Degree Materials
 
