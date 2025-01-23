@@ -551,8 +551,6 @@ class SuSyMaterials {
         public static Material DistilledNParaffin;
         public static Material IsomerizedParaffin;
         public static Material SodiumHydroxideMethanolSolution;
-        public static Material NChlorohexane;
-
         // Petrochem Materials   
 
         public static Material DilutedOil;
