@@ -755,11 +755,5 @@ public class SecondDegreeMaterials {
                 .components(SodiumHydroxide, Methanol)
                 .colorAverage()
                 .build();
-
-        NChlorohexane = new Material.Builder(13121, SuSyUtility.susyId("n_chlorohexane"))
-                .fluid()
-                .components(Carbon * 6, Hydrogen * 11, Chlorine)
-                .colorAverage()
-                .build();
     }
 }
