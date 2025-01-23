@@ -2096,8 +2096,6 @@ susy.material.stellite_j=Stellite J
 susy.material.stellite_six=Stellite 6
 susy.material.hsla_eighty_x=HSLA 980X
 susy.material.food_grade_stainless_steel=Food-Grade Stainless Steel
-
-# Graphene Chain
 susy.material.moist_argon=Moist Argon
 susy.material.argon_hydrogen_mixture=Argon Hydrogen Mixture
 susy.material.ammoniacal_argon_hydrogen_mixture=Ammoniacal Argon Hydrogen Mixture
@@ -2107,7 +2105,6 @@ susy.material.cold_ammoniacal_argon_hydrogen_mixture=Cold Ammoniacal Argon Hydro
 susy.material.cold_argon_hydrogen_mixture=Cold Argon Hydrogen Mixture
 susy.material.lithium_carbonate_solution=Lithium Carbonate Solution
 susy.material.impure_lithium_carbonate_solution=Impure Lithium Carbonate Solution
-
 susy.material.impure_lithium_carbonate=Impure Lithium Carbonate
 susy.material.washed_graphene=Washed Graphene
 susy.material.distilled_graphene=Distilled Graphene
@@ -2140,8 +2137,6 @@ susy.material.synthetic_wax=Synthetic Wax
 susy.material.hydrocracked_synthetic_wax=Hydrocracked Synthetic Wax
 susy.material.oxygenate_solution=Oxygenate Solution
 susy.material.methanol_dehydration_overheads=Methanol Dehydration Overheads
-
-# Biofuel Chain
 susy.material.deacidified_lipid=Deacidified Lipid
 susy.material.glycerol_methanol_solution=Glycerol Methanol Solution
 susy.material.glycerol_ethanol_solution=Glycerol Ethanol Solution
@@ -2162,6 +2157,7 @@ susy.material.distilled_n_paraffin=Distilled n-Paraffin
 susy.material.isomerized_paraffin=Isomerized Paraffin
 susy.material.acidic_hydrogen_vapor=Acidic Hydrogen Vapor
 susy.material.sodium_hydroxide_methanol_solution=Sodium Hydroxide-Methanol Solution
+susy.material.dehexanized_naphtha=Dehexanized Naphtha
 
 # Isotopes
 
