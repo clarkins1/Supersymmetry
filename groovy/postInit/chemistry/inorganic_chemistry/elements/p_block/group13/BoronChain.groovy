@@ -274,7 +274,7 @@ BR.recipeBuilder()
 
 DISTILLERY.recipeBuilder()
     .fluidInputs(fluid('sodium_hydroxide_methanol_solution') * 1000)
-    .outputs(metaitem('dustSodiumHydroxide') * 4)
+    .outputs(metaitem('dustSodiumHydroxide') * 3)
     .fluidOutputs(fluid('methanol') * 1000)
     .duration(200)
     .EUt(120)
