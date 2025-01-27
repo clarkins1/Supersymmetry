@@ -180,6 +180,11 @@ crafting.replaceShaped('gcym:casing_high_temperature', item('gcym:large_multiblo
         [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
         [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
         [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
+
+RecyclingHelper.replaceShaped('gcym:casing_high_temperature', item('gcym:large_multiblock_casing', 1) * 2, [
+        [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
+        [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
+        [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
 /*
     Blocks from GT superalloys need to be removed (block, frame, sheeted frame) and liquids
     Recipes for GCYM casings need to be changed to use SuSy superalloys, currently they still have recipes with old ones
