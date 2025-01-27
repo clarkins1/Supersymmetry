@@ -1,5 +1,5 @@
-mods/
 buildOut/
+build/server
 *client.zip
 .mixin.out/
 armourers_workshop/
@@ -8,13 +8,13 @@ fonts/
 journeymap/
 logs/
 saves/
-build/buildOut/
 
 .curseclient
 usercache.json
 usernamecache.json
 minecraftinstance.json
 instance.json
+index.toml
 
 *.log
 *.txt
@@ -81,7 +81,7 @@ screenshots/
 
 backups/
 
-resourcepacks/
+# resourcepacks/
 
 local/
 
@@ -92,3 +92,4 @@ jarmods/
 visualores/
 
 *__pycache__*
+servers.dat

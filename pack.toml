@@ -1,0 +1,13 @@
+name = "Supersymmetry"
+author = "SymmetricDevs"
+version = "0.1.14.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "ce5e9bc8282a631e33b9f264880592e274b2ff4a4e30559b462e598e5b0ed42d"
+
+[versions]
+forge = "14.23.5.2860"
+minecraft = "1.12.2"

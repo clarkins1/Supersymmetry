@@ -45,7 +45,7 @@ for (i = 1; i <= 13; i++) {
 		metaitem('chemical_reactor.' + Globals.voltageTiers[i])
 	)
 }
-for (i = 1; i <= 9; i++) {
+for (i = 1; i <= 8; i++) {
 	mods.jei.ingredient.yeet(
 		metaitem('world_accelerator.' + Globals.voltageTiers[i])
 	)
@@ -274,7 +274,7 @@ recipemap('extruder').recipeBuilder()
 
 recipemap('sintering_oven').recipeBuilder()
 		.inputs(metaitem('raw_electrode'))
-		.fluidInputs(fluid('syngas') * 100)
+		.fluidInputs(fluid('monoxide_rich_syngas') * 100)
 		.fluidInputs(fluid('air') * 100)
 		.outputs(metaitem('graphite_electrode'))
 		.fluidOutputs(fluid('carbon_dioxide') * 50)
@@ -294,7 +294,7 @@ recipemap('sintering_oven').recipeBuilder()
 
 recipemap('sintering_oven').recipeBuilder()
 		.inputs(metaitem('raw_electrode'))
-		.fluidInputs(fluid('syngas') * 100)
+		.fluidInputs(fluid('monoxide_rich_syngas') * 100)
 		.fluidInputs(fluid('oxygen') * 80)
 		.outputs(metaitem('graphite_electrode'))
 		.fluidOutputs(fluid('carbon_dioxide') * 50)
@@ -995,6 +995,16 @@ for (i = 1; i <= 8; i++) {
 	])
 }
 
+// Incinerator
+
+for (i = 1; i <= 4; i++) {
+	RecyclingHelper.addShaped("gregtech:incinerator." + Globals.voltageTiers[i], metaitem('incinerator.' + Globals.voltageTiers[i]), [
+			[circuits[i], pumps[i], circuits[i]],
+			[tieredQuadCables[i], hulls[i], tieredQuadCables[i]],
+			[tieredSprings[i], tieredSprings[i], tieredSprings[i]]
+	])
+}
+
 // Bath Condenser
 
 RecyclingHelper.addShaped("gregtech:bath_condenser", metaitem('bath_condenser'), [
@@ -1063,12 +1073,12 @@ recipemap('assembler').recipeBuilder()
 //Catalytic Reformer
 
 recipemap('assembler').recipeBuilder()
-		.inputs(metaitem('hull.ev'))
-		.inputs(metaitem('frameTitanium') * 4)
-		.inputs(metaitem('electric.pump.ev') * 2)
-		.inputs(metaitem('pipeHugeFluidTitanium'))
-		.inputs(metaitem('rotorTitanium'))
-		.inputs(ore('circuitEv'))
+		.inputs(metaitem('hull.hv'))
+		.inputs(metaitem('frameStainlessSteel') * 4)
+		.inputs(metaitem('electric.pump.hv') * 2)
+		.inputs(metaitem('pipeHugeFluidStainlessSteel'))
+		.inputs(metaitem('rotorStainlessSteel'))
+		.inputs(ore('circuitHv'))
 		.outputs(metaitem('catalytic_reformer'))
 		.circuitMeta(3)
 		.EUt(480)
@@ -1196,3 +1206,9 @@ RecyclingHelper.addShaped('gregtech:large_fluid_pump', metaitem('large_fluid_pum
 ])
 
 crafting.addShapeless("gregtech:ocean_pumper_switching", metaitem('large_fluid_pump'), [metaitem('ocean_pumper')]);
+
+RecyclingHelper.addShaped("gregtech:sieve_distillation_tower", metaitem('sieve_distillation_tower'), [
+	[metaitem('frameStainlessSteel'),ore('circuitHv'),metaitem('frameStainlessSteel')],
+	[metaitem('springKanthal'),metaitem('hull.Hv'),metaitem('springKanthal')],
+	[metaitem('frameStainlessSteel'),metaitem('electric.pump.hv'),metaitem('frameStainlessSteel')]
+])
