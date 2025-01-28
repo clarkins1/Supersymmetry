@@ -2609,7 +2609,17 @@ public class FirstDegreeMaterials {
                 .build()
                 .setFormula("(?)(Mn(NO3)2)(H2O)", true)
 
-        //FREE IDs: 8484-8485
+        SodiumHydride = new Material.Builder(8484, SuSyUtility.susyId('sodium_hydride'))
+                .dust()
+                .components(Sodium, Hydrogen)
+                .colorAverage()
+                .build();
+
+        SodiumBorohydride = new Material.Builder(8485, SuSyUtility.susyId('sodium_borohydride'))
+                .dust()
+                .components(Sodium, Boron, Hydrogen * 4)
+                .colorAverage()
+                .build();
 
         UltramaficTailingSlurry = new Material.Builder(8486, SuSyUtility.susyId('ultramafic_tailing_slurry'))
                 .liquid()

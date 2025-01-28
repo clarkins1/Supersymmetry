@@ -56,7 +56,7 @@ PHASE_SEPARATOR = recipemap('phase_separator')
         .fluidInputs(fluid('crude_lubricating_oil') * 850)
         .fluidInputs(fluid('dewaxing_solvent') * 2000)
         .fluidOutputs(fluid('solvent_lubricant_mixture') * 2850)
-        .duration(20)
+        .duration(80)
         .EUt(30)
         .buildAndRegister()
 
@@ -64,7 +64,7 @@ PHASE_SEPARATOR = recipemap('phase_separator')
         .fluidInputs(fluid('deasphalted_oil') * 850)
         .fluidInputs(fluid('dewaxing_solvent') * 2000)
         .fluidOutputs(fluid('solvent_lubricant_mixture') * 2850)
-        .duration(20)
+        .duration(80)
         .EUt(30)
         .buildAndRegister()
 
@@ -134,6 +134,35 @@ PHASE_SEPARATOR = recipemap('phase_separator')
             .fluidOutputs(fluid('lubricating_oil') * 850)
             .fluidOutputs(fluid('sour_gas') * 315)
             .duration(20)
+            .EUt(30)
+            .buildAndRegister()
+
+        FBR.recipeBuilder()
+            .fluidInputs(fluid('deasphalted_oil') * 850)
+            .fluidInputs(fluid('hydrogen') * 315)
+            .notConsumable(metaitem('catalystBedPlatinumSapoEleven'))
+            .fluidOutputs(fluid('sulfuric_lubricating_oil') * 850)
+            .fluidOutputs(fluid('sour_gas') * 315)
+            .duration(20)
+            .EUt(30)
+            .buildAndRegister()
+
+        // Hydrofinishing
+
+        FBR.recipeBuilder()
+            .fluidInputs(fluid('sulfuric_lubricating_oil') * 850)
+            .fluidInputs(fluid('hydrogen') * 100)
+            .notConsumable(metaitem('catalystBedHydrotreatingCatalyst'))
+            .fluidOutputs(fluid('treated_sulfuric_lubricating_oil') * 850)
+            .duration(15)
+            .EUt(30)
+            .buildAndRegister()
+
+        DT.recipeBuilder()
+            .fluidInputs(fluid('treated_sulfuric_lubricating_oil') * 850)
+            .fluidOutputs(fluid('lubricating_oil') * 850)
+            .fluidOutputs(fluid('sour_gas') * 100)
+            .duration(50)
             .EUt(30)
             .buildAndRegister()
 
@@ -945,6 +974,7 @@ def baseOilMap = [
     'seed_oil': 0.5,
     'lubricating_oil': 1,
     'light_cycle_oil' : 1,
+    'synthetic_wax': 1.5,
     'polybutene': 1.5,
     'polyalphaolefin': 2.5,
     'ester_base_oil': 3

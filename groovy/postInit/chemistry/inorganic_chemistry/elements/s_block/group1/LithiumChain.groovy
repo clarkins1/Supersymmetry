@@ -16,6 +16,7 @@ ROTARY_KILN = recipemap("rotary_kiln")
 DRYER = recipemap("dryer")
 MACERATOR = recipemap("macerator")
 CLARIFIER = recipemap("clarifier")
+VACUUM_CHAMBER = recipemap('vacuum_chamber')
 
 //UNIVERSAL
 MIXER.recipeBuilder()
@@ -252,6 +253,40 @@ CRYSTALLIZER.recipeBuilder()
         .EUt(200)
         .buildAndRegister()
 
+// Lithium hydroxide
+BR.recipeBuilder()
+        .fluidInputs(fluid('water') * 8000)
+        .inputs(metaitem('gregtechfoodoption:lithium_carbonate_dust') * 6)
+        .inputs(metaitem('dustCalciumHydroxide') * 5)
+        .outputs(metaitem('dustCalcite') * 5)
+        .fluidOutputs(fluid('lithium_hydroxide_mother_liquor') * 8000)
+        .duration(480)
+        .EUt(30)
+        .buildAndRegister();
+
+CRYSTALLIZER.recipeBuilder()
+        .fluidInputs(fluid('lithium_hydroxide_mother_liquor') * 8000)
+        .fluidOutputs(fluid('water') * 7000)
+        .outputs(metaitem('dustLithiumHydroxideMonohydrate') * 6)
+        .duration(240)
+        .EUt(30)
+        .buildAndRegister();
+
+ROASTER.recipeBuilder()
+        .inputs(metaitem('dustLithiumHydroxideMonohydrate') * 6)
+        .fluidOutputs(fluid('dense_steam') * 1000)
+        .outputs(metaitem('dustLithiumHydroxide') * 3)
+        .duration(960)
+        .EUt(30)
+        .buildAndRegister();
+
+VACUUM_CHAMBER.recipeBuilder()
+        .inputs(metaitem('dustLithiumHydroxideMonohydrate') * 6)
+        .fluidOutputs(fluid('dense_steam') * 1000)
+        .outputs(metaitem('dustLithiumHydroxide') * 3)
+        .duration(60)
+        .EUt(60)
+        .buildAndRegister();
 // LiNO3
 
 BR.recipeBuilder()

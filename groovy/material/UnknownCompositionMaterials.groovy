@@ -495,6 +495,7 @@ public class UnknownCompositionMaterials {
 
         HTSCatalyst = new Material.Builder(4094, SuSyUtility.susyId('hts_catalyst'))
                 .dust()
+                .flags(GENERATE_CATALYST_BED)
                 .color(0x5e4f4f)
                 .build();
 
@@ -1163,7 +1164,24 @@ public class UnknownCompositionMaterials {
                 .flags(FLAMMABLE)
                 .build();
 
-        //FREE IDs: 4225-4231
+        LtftCatalystSolution = new Material.Builder(4225, SuSyUtility.susyId('ltft_catalyst_solution'))
+                .liquid()
+                .color(0x4f3030)
+                .build();
+
+        LtftCatalyst = new Material.Builder(4226, SuSyUtility.susyId('ltft_catalyst'))
+                .dust()
+                .color(0x4f3030)
+                .flags(GENERATE_CATALYST_BED)
+                .build();
+
+        HtftCatalyst = new Material.Builder(4227, SuSyUtility.susyId('htft_catalyst'))
+                .dust()
+                .color(0x7d2727)
+                .flags(GENERATE_CATALYST_BED)
+                .build();
+
+        //FREE IDs: 4228-4231
 
         TitanylSulfateSolution = new Material.Builder(4232, SuSyUtility.susyId('titanyl_sulfate_solution'))
                 .liquid()
@@ -1179,7 +1197,7 @@ public class UnknownCompositionMaterials {
 
         AcidicWastewater.setFormula('(H2O)(?)', true);
 
-        DirtyMolecularSieve = new Material.Builder(4234, SuSyUtility.susyId('dirty_molecular_sieve'))
+        CarbonatedMolecularSieve = new Material.Builder(4234, SuSyUtility.susyId('carbonated_molecular_sieve'))
                 .dust()
                 .color(0x737373)
                 .iconSet(DULL)

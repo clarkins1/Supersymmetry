@@ -352,15 +352,20 @@ class SuSyMaterials {
         public static Material MidgradeGasoline;
         public static Material PremiumGasoline;
         public static Material SupremeGasoline;
+        public static Material LtftCatalystSolution;
+        public static Material LtftCatalyst;
+        public static Material HtftCatalyst;
         public static Material AcidicWastewater;
         public static Material ImpureTitaniumTetrachloride;
         public static Material DistilledTitaniumTetrachloride;
         public static Material VanadiumFreeTitaniumTetrachloride;
+        public static Material SodiumBorohydride;
+        public static Material SodiumHydride;
         public static Material UltramaficTailingSlurry;
         public static Material GaseousIronIIIChloride;
         public static Material GaseousTitaniumTetrachloride;
         public static Material GaseousAluminiumChloride;
-        public static Material DirtyMolecularSieve;
+        public static Material CarbonatedMolecularSieve;
         public static Material OligomericBisphenolSolution;
         public static Material GraniteTailingSlurry;
         public static Material SphaleriteByproductSlurry;
@@ -545,7 +550,7 @@ class SuSyMaterials {
         public static Material NeutralizedNParaffin;
         public static Material DistilledNParaffin;
         public static Material IsomerizedParaffin;
-
+        public static Material SodiumHydroxideMethanolSolution;
         // Petrochem Materials   
 
         public static Material DilutedOil;
@@ -676,6 +681,30 @@ class SuSyMaterials {
         public static Material OilyBrine;
         public static Material LightOilyBrine;
         public static Material HeavyOilyBrine;
+
+        public static Material RawHydrogenRichSyngas;
+        public static Material HydrogenRichSyngas;
+        public static Material ReformedHydrogenRichSyngas;
+        public static Material RawMonoxideRichSyngas;
+        public static Material MonoxideRichSyngas;
+        public static Material ReformedMonoxideRichSyngas;
+
+        public static Material LiquefactionOil;
+        public static Material LightLiquefactionOil;
+        public static Material CrudeMediumLiquefactionOil;
+        public static Material MediumLiquefactionOil;
+
+        public static Material RawLtSyncrude;
+        public static Material LtSyncrude;
+        public static Material LtLightGases;
+        public static Material RawHtSyncrude;
+        public static Material HtSyncrude;
+        public static Material HtLightGases;
+
+        public static Material SyntheticWax;
+        public static Material HydrocrackedSyntheticWax;
+        public static Material OxygenateSolution;
+        public static Material MethanolDehydrationOverheads;
         public static Material AsphalteneExtract;
         public static Material SourGas;
         public static Material SlackWax;
@@ -683,8 +712,6 @@ class SuSyMaterials {
         public static Material UncatalyzedSulfurousGases;
         public static Material BtexExtract;
         public static Material BTEX;
-        public static Material Syngas;
-        public static Material ReformedSyngas;
         public static Material ClarifiedSlurryOil;
         public static Material CrudeLubricatingOil;
         public static Material SolventLubricantMixture;
@@ -703,6 +730,7 @@ class SuSyMaterials {
         public static Material FluidCrackedVacuumOilResidue;
         public static Material CokingEffluents;
         public static Material RPOne;
+        public static Material DehexanizedNaphtha;
 
         // First Degree Materials
 
@@ -1066,6 +1094,8 @@ class SuSyMaterials {
         public static Material SodiumHexachloroplatinateSolution;
         public static Material AmmoniumHexachloroplatinate;
         public static Material DilutedCopperSulfateSolution;
+        public static Material ImpureSodiumBorohydride;
+        public static Material SodiumBorohydrideSolution;
         public static Material NickelSulfate;
         public static Material NickelSulfateSolution;
         public static Material AluminiumNitride;
@@ -1312,7 +1342,7 @@ class SuSyMaterials {
         public static Material WackerCatalyst;
         public static Material PotassiumIodideSolution;
         public static Material SodiumSulfateSolution;
-        public static Material ImpregnatedCopperOxideCatalyst;
+        public static Material CopperZincChromiumOxide;
         public static Material PhilipsCatalyst;
         public static Material ZieglerNattaCatalyst;
         public static Material HydrogenPeroxideSolution;
@@ -1435,10 +1465,12 @@ class SuSyMaterials {
         public static Material Isobutane;
         public static Material Isobutylene;
         public static Material MethylAcetateSolution;
+        public static Material TrimethylBorate;
         public static Material TwoChloronitrobenzene;
         public static Material MixedChloronitrobenzene;
         public static Material FourNitroanilineSolution;
         public static Material ParaPhenylenediamineSolution;
+        public static Material TrimethylBorateSolution;
         public static Material DichlorobenzidineSolution;
         public static Material Xylene;
         public static Material Phosgene;
@@ -1772,6 +1804,7 @@ class SuSyMaterials {
         public static Material SalicylideneEthylenediamine;
         public static Material Pseudocumene;
         public static Material TwoButoxyethanol;
+        public static Material Tetralin;
         public static Material PolyethyleneGlycol;
         public static Material OneThreeDinitrobenzene;
         public static Material MetaPhenylenediamine;
@@ -1814,6 +1847,8 @@ class SuSyMaterials {
         public static Material CompoundedStyreneButadieneRubber;
         public static Material TwoSixXylenol;
         public static Material TwoFourFiveXylenolMixture;
+        public static Material Isopropylamine;
+        public static Material IsopropylamineSolution;
 
         // Third Degree Materials
 
@@ -1918,6 +1953,8 @@ class SuSyMaterials {
         public static Material OxalicAcidSolution;
         public static Material GalliumSulfateSolution;
         public static Material FormicAcidWaterAzeotrope;
+        public static Material LithiumHydroxideMotherLiquor;
+        public static Material LithiumHydroxideMonohydrate;
 
         // Thermodynamics Materials
 

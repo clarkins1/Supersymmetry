@@ -249,7 +249,13 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        //FREE ID: 15038
+        TrimethylBorate = new Material.Builder(15038, SuSyUtility.susyId('trimethyl_borate'))
+                .liquid()
+                .components(Boron, Carbon * 3, Oxygen * 3, Hydrogen * 9)
+                .colorAverage()
+                .build();
+
+        TrimethylBorate.setFormula("B(OCH3)3", true)
 
         MethylAcetateSolution = new Material.Builder(15039, SuSyUtility.susyId('methyl_acetate_solution'))
                 .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
@@ -280,7 +286,11 @@ public class OrganicChemistryMaterials {
                 .colorAverage()
                 .build();
 
-        //FREE ID: 15044
+        TrimethylBorateSolution = new Material.Builder(15044, SuSyUtility.susyId('trimethyl_borate_solution'))
+                .liquid(new FluidBuilder().attribute(FluidAttributes.ACID))
+                .components(TrimethylBorate, SulfuricAcid, Water)
+                .colorAverage()
+                .build();
 
         DichlorobenzidineSolution = new Material.Builder(15045, SuSyUtility.susyId('dichlorobenzidine_solution'))
                 .liquid()
@@ -2244,7 +2254,12 @@ public class OrganicChemistryMaterials {
                 .color(0xa0c9db)
                 .build();
 
-        //FREE ID: 15359
+        Tetralin = new Material.Builder(15359, SuSyUtility.susyId('tetralin'))
+                .liquid()
+                .components(Carbon * 10, Hydrogen * 12)
+                .color(0xbfb163)
+                .flags(FLAMMABLE)
+                .build();
 
         Diamylamine = new Material.Builder(15360, SuSyUtility.susyId('diamylamine'))
                 .liquid()
@@ -2595,6 +2610,30 @@ public class OrganicChemistryMaterials {
                 .dust()
                 .components(Butadiene * 3, Styrene * 1)
                 .color(0x3b2d2b)
+                .build();
+
+        Isopropylamine = new Material.Builder(15414, SuSyUtility.susyId('isopropylamine'))
+                .liquid()
+                .components(Carbon * 3, Hydrogen * 9, Nitrogen * 1)
+                .colorAverage()
+                .build();
+
+        IsopropylamineSolution = new Material.Builder(15415, SuSyUtility.susyId('isopropylamine_solution'))
+                .liquid()
+                .components(Isopropylamine, Water)
+                .colorAverage()
+                .build();
+
+        ImpureSodiumBorohydride = new Material.Builder(15416, SuSyUtility.susyId('impure_sodium_borohydride'))
+                .dust()
+                .components(SodiumBorohydride, SodiumMethoxide * 3)
+                .colorAverage()
+                .build();
+
+        SodiumBorohydrideSolution = new Material.Builder(15417, SuSyUtility.susyId('sodium_borohydride_solution'))
+                .fluid()
+                .components(SodiumBorohydride, Isopropylamine)
+                .colorAverage()
                 .build();
     }
 }

@@ -274,7 +274,7 @@ recipemap('extruder').recipeBuilder()
 
 recipemap('sintering_oven').recipeBuilder()
 		.inputs(metaitem('raw_electrode'))
-		.fluidInputs(fluid('syngas') * 100)
+		.fluidInputs(fluid('monoxide_rich_syngas') * 100)
 		.fluidInputs(fluid('air') * 100)
 		.outputs(metaitem('graphite_electrode'))
 		.fluidOutputs(fluid('carbon_dioxide') * 50)
@@ -294,7 +294,7 @@ recipemap('sintering_oven').recipeBuilder()
 
 recipemap('sintering_oven').recipeBuilder()
 		.inputs(metaitem('raw_electrode'))
-		.fluidInputs(fluid('syngas') * 100)
+		.fluidInputs(fluid('monoxide_rich_syngas') * 100)
 		.fluidInputs(fluid('oxygen') * 80)
 		.outputs(metaitem('graphite_electrode'))
 		.fluidOutputs(fluid('carbon_dioxide') * 50)
@@ -992,6 +992,16 @@ for (i = 1; i <= 8; i++) {
 			[circuits[i], tieredCables[i], circuits[i]],
 			[pumps[i], hulls[i], motors[i]],
 			[tieredCables[i], motors[i], motors[i]]
+	])
+}
+
+// Incinerator
+
+for (i = 1; i <= 4; i++) {
+	RecyclingHelper.addShaped("gregtech:incinerator." + Globals.voltageTiers[i], metaitem('incinerator.' + Globals.voltageTiers[i]), [
+			[circuits[i], pumps[i], circuits[i]],
+			[tieredQuadCables[i], hulls[i], tieredQuadCables[i]],
+			[tieredSprings[i], tieredSprings[i], tieredSprings[i]]
 	])
 }
 

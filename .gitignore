@@ -14,11 +14,11 @@ usercache.json
 usernamecache.json
 minecraftinstance.json
 instance.json
+index.toml
 
 *.log
 *.txt
 *.dll
-*.exe
 
 build/modlist.*
 config/InvTweaks.cfg
