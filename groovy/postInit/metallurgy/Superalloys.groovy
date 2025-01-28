@@ -1,4 +1,5 @@
 import globals.Globals
+import globals.RecyclingHelper
 
 ABS = recipemap('alloy_blast_smelter')
 
@@ -170,6 +171,21 @@ mods.jei.ingredient.removeAndHide(metaitem('springHslaSteel'));
 mods.jei.ingredient.removeAndHide(metaitem('stickLongHslaSteel'));
 mods.jei.ingredient.removeAndHide(metaitem('plateDoubleHslaSteel'));
 
+mods.gregtech.mixer.removeByInput(480, [metaitem('dustCobalt') * 5, metaitem('dustChrome') * 2, metaitem('dustNickel'),
+                                        metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+mods.gregtech.mixer.removeByInput(480, [metaitem('dustInvar') * 2, metaitem('dustVanadium'), metaitem('dustTitanium'),
+                                        metaitem('dustMolybdenum'), metaitem('circuit.integrated').withNbt(["Configuration": 1])], null)
+
+
+crafting.replaceShaped('gcym:casing_high_temperature', item('gcym:large_multiblock_casing', 1) * 2, [
+        [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
+        [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
+        [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
+
+RecyclingHelper.replaceShaped('gcym:casing_high_temperature', item('gcym:large_multiblock_casing', 1) * 2, [
+        [metaitem('plateTitanium'), ore('craftingToolHardHammer'), metaitem('plateTitanium')],
+        [metaitem('plateTitaniumCarbide'), metaitem('frameTungstenCarbide'), metaitem('plateTitaniumCarbide')],
+        [metaitem('plateTitanium'), ore('craftingToolWrench'), metaitem('plateTitanium')]])
 /*
     Blocks from GT superalloys need to be removed (block, frame, sheeted frame) and liquids
     Recipes for GCYM casings need to be changed to use SuSy superalloys, currently they still have recipes with old ones
