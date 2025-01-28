@@ -359,6 +359,8 @@ class SuSyMaterials {
         public static Material ImpureTitaniumTetrachloride;
         public static Material DistilledTitaniumTetrachloride;
         public static Material VanadiumFreeTitaniumTetrachloride;
+        public static Material SodiumBorohydride;
+        public static Material SodiumHydride;
         public static Material UltramaficTailingSlurry;
         public static Material GaseousIronIIIChloride;
         public static Material GaseousTitaniumTetrachloride;
@@ -548,7 +550,7 @@ class SuSyMaterials {
         public static Material NeutralizedNParaffin;
         public static Material DistilledNParaffin;
         public static Material IsomerizedParaffin;
-
+        public static Material SodiumHydroxideMethanolSolution;
         // Petrochem Materials   
 
         public static Material DilutedOil;
@@ -1092,6 +1094,8 @@ class SuSyMaterials {
         public static Material SodiumHexachloroplatinateSolution;
         public static Material AmmoniumHexachloroplatinate;
         public static Material DilutedCopperSulfateSolution;
+        public static Material ImpureSodiumBorohydride;
+        public static Material SodiumBorohydrideSolution;
         public static Material NickelSulfate;
         public static Material NickelSulfateSolution;
         public static Material AluminiumNitride;
@@ -1461,10 +1465,12 @@ class SuSyMaterials {
         public static Material Isobutane;
         public static Material Isobutylene;
         public static Material MethylAcetateSolution;
+        public static Material TrimethylBorate;
         public static Material TwoChloronitrobenzene;
         public static Material MixedChloronitrobenzene;
         public static Material FourNitroanilineSolution;
         public static Material ParaPhenylenediamineSolution;
+        public static Material TrimethylBorateSolution;
         public static Material DichlorobenzidineSolution;
         public static Material Xylene;
         public static Material Phosgene;
@@ -1841,6 +1847,8 @@ class SuSyMaterials {
         public static Material CompoundedStyreneButadieneRubber;
         public static Material TwoSixXylenol;
         public static Material TwoFourFiveXylenolMixture;
+        public static Material Isopropylamine;
+        public static Material IsopropylamineSolution;
 
         // Third Degree Materials
 

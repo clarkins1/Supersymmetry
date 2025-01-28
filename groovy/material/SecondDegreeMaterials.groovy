@@ -749,5 +749,11 @@ public class SecondDegreeMaterials {
                 .color(0x003c74)
                 .build()
                 .setFormula("(H)8(CO2)", true);
+
+        SodiumHydroxideMethanolSolution = new Material.Builder(13120, SuSyUtility.susyId("sodium_hydroxide_methanol_solution"))
+                .fluid()
+                .components(SodiumHydroxide, Methanol)
+                .colorAverage()
+                .build();
     }
 }
