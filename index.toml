@@ -1,6 +1,0 @@
-hash-format = "sha256"
-
-[[files]]
-file = "mods/susycore.pw.toml"
-hash = "897f1693662a0c9a1d834aa4dda0948ce17372a1ff79a3a71d9af13c3e5c4a0b"
-metafile = true
