@@ -14,6 +14,30 @@
     }
   },
   "questID:3": 97148971,
+  "rewards:9": {
+    "0:10": {
+      "rewardID:8": "bq_standard:item",
+      "rewards:9": {
+        "0:10": {
+          "Count:3": 1,
+          "id:8": "simple_trophies:trophy",
+          "tag:10": {
+            "TrophyColorBlue:3": 26,
+            "TrophyColorGreen:3": 37,
+            "TrophyColorRed:3": 55,
+            "TrophyItem:10": {
+              "Count:3": 1,
+              "Damage:2": 14800,
+              "id:8": "gregtech:machine"
+            },
+            "TrophyName:8": "Sticks and Stones",
+            "TrophyShowsTooltip:1": 1,
+            "TrophyVariant:8": "classic"
+          }
+        }
+      }
+    }
+  },
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {

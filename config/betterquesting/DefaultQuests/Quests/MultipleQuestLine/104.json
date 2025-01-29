@@ -17,6 +17,30 @@
     }
   },
   "questID:3": 104,
+  "rewards:9": {
+    "0:10": {
+      "rewardID:8": "bq_standard:item",
+      "rewards:9": {
+        "0:10": {
+          "Count:3": 1,
+          "id:8": "simple_trophies:trophy",
+          "tag:10": {
+            "TrophyColorBlue:3": 161,
+            "TrophyColorGreen:3": 144,
+            "TrophyColorRed:3": 105,
+            "TrophyItem:10": {
+              "Count:3": 1,
+              "Damage:2": 950,
+              "id:8": "gregtech:machine"
+            },
+            "TrophyName:8": "Locked and Loaded",
+            "TrophyShowsTooltip:1": 1,
+            "TrophyVariant:8": "neon"
+          }
+        }
+      }
+    }
+  },
   "tasks:9": {
     "0:10": {
       "requiredItems:9": {
