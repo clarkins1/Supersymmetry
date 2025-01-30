@@ -23,8 +23,8 @@ import static material.SuSyMaterials.*
 class ChangeFlags {
 	private static void setupSlurries(Material mat) {
 		def property = new FluidProperty()
-		property.enqueueRegistration(SusyFluidStorageKeys.SLURRY, new FluidBuilder())
-		property.enqueueRegistration(SusyFluidStorageKeys.IMPURE_SLURRY, new FluidBuilder())
+		property.enqueueRegistration(SusyFluidStorageKeys.SLURRY, new FluidBuilder().temperature(293))
+		property.enqueueRegistration(SusyFluidStorageKeys.IMPURE_SLURRY, new FluidBuilder().temperature(293))
 
 		mat.setProperty(PropertyKey.FLUID, property)
 	}

@@ -1495,7 +1495,7 @@ public class UnknownCompositionMaterials {
                 .build();
 
         MolybdeniteFlueGas = new Material.Builder(4326, SuSyUtility.susyId('molybdenite_flue_gas'))
-                .liquid()
+                .gas()
                 .color(0x464e61)
                 .build();
 
